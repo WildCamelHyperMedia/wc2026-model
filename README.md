@@ -35,13 +35,9 @@ open wc2026_dashboard.html   # the dashboard (also written to docs/index.html)
 3. **Actions** tab → enable workflows
 
 Done. `.github/workflows/update.yml` re-runs the full pipeline every 30
-minutes and commits the refreshed dashboard — your Pages URL stays current
-with every match, no computer needed.
-
-## Run on Replit
-
-Import the GitHub repo into Replit and hit Run — `serve.py` starts the
-watcher (rebuilds on every new result) and serves the dashboard on port 8080.
+minutes on GitHub's servers and commits the refreshed dashboard — your Pages
+URL stays current with every match. No other service, no computer running
+anywhere. Share the URL; that's the app.
 
 ## Manual levers
 
