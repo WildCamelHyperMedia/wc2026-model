@@ -1,10 +1,10 @@
 {
  "meta": {
   "n_sims": 50000,
-  "generated_at": "2026-06-11 16:02 UTC",
+  "generated_at": "2026-06-11 18:48 UTC",
   "overround_pct": 20.5,
   "freshness": {
-   "elo_as_of": "2026-06-11 15:18 UTC",
+   "elo_as_of": "2026-06-11 18:47 UTC",
    "odds_as_of": "2026-06-11 16:01 UTC",
    "odds_source": "The Odds API consensus (4 books)",
    "results_locked": 0,
@@ -29,7 +29,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 5.5,
-   "market_implied": 0.16090227280679772,
+   "market_implied": 0.16090227280679778,
    "modes": {
     "pure": {
      "group_win": 0.86122,
@@ -59,9 +59,9 @@
      "champion": 0.16716
     }
    },
-   "edge_pure": 0.11355772719320226,
+   "edge_pure": 0.1135577271932022,
    "ev_pure": 0.5095299999999998,
-   "edge_blend": 0.06313772719320226,
+   "edge_blend": 0.06313772719320221,
    "ev_blend": 0.23221999999999987,
    "kelly_blend": 0.05160444444444442
   },
@@ -73,7 +73,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 5.62,
-   "market_implied": 0.15722317996964988,
+   "market_implied": 0.15722317996964993,
    "modes": {
     "pure": {
      "group_win": 0.66342,
@@ -103,9 +103,9 @@
      "champion": 0.15634
     }
    },
-   "edge_pure": -0.040083179969649885,
+   "edge_pure": -0.04008317996964994,
    "ev_pure": -0.3416732,
-   "edge_blend": -0.015523179969649886,
+   "edge_blend": -0.015523179969649942,
    "ev_blend": -0.203646,
    "kelly_blend": 0.0
   },
@@ -117,7 +117,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 10.25,
-   "market_implied": 0.08256944143936779,
+   "market_implied": 0.08256944143936781,
    "modes": {
     "pure": {
      "group_win": 0.86314,
@@ -147,9 +147,9 @@
      "champion": 0.08416
     }
    },
-   "edge_pure": 0.11213055856063223,
+   "edge_pure": 0.1121305585606322,
    "ev_pure": 0.9956750000000001,
-   "edge_blend": 0.05007055856063222,
+   "edge_blend": 0.050070558560632195,
    "ev_blend": 0.3595600000000001,
    "kelly_blend": 0.03887135135135136
   },
@@ -161,7 +161,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 8.0,
-   "market_implied": 0.10768848922535275,
+   "market_implied": 0.10768848922535276,
    "modes": {
     "pure": {
      "group_win": 0.65864,
@@ -191,9 +191,9 @@
      "champion": 0.10976
     }
    },
-   "edge_pure": -0.03756848922535275,
+   "edge_pure": -0.03756848922535276,
    "ev_pure": -0.43904,
-   "edge_blend": -0.01192848922535275,
+   "edge_blend": -0.011928489225352765,
    "ev_blend": -0.23392000000000002,
    "kelly_blend": 0.0
   },
@@ -205,7 +205,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 8.5,
-   "market_implied": 0.10091433813472621,
+   "market_implied": 0.10091433813472622,
    "modes": {
     "pure": {
      "group_win": 0.48298,
@@ -235,9 +235,9 @@
      "champion": 0.10444
     }
    },
-   "edge_pure": -0.05643433813472621,
+   "edge_pure": -0.056434338134726224,
    "ev_pure": -0.62192,
-   "edge_blend": -0.026874338134726214,
+   "edge_blend": -0.026874338134726228,
    "ev_blend": -0.37066,
    "kelly_blend": 0.0
   },
@@ -249,7 +249,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 10.25,
-   "market_implied": 0.08256944143936779,
+   "market_implied": 0.08256944143936781,
    "modes": {
     "pure": {
      "group_win": 0.68174,
@@ -279,9 +279,9 @@
      "champion": 0.08468
     }
    },
-   "edge_pure": -0.034909441439367785,
+   "edge_pure": -0.03490944143936781,
    "ev_pure": -0.511485,
-   "edge_blend": -0.020349441439367788,
+   "edge_blend": -0.020349441439367816,
    "ev_blend": -0.36224500000000004,
    "kelly_blend": 0.0
   },
@@ -293,7 +293,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 15.0,
-   "market_implied": 0.054903128577164284,
+   "market_implied": 0.0549031285771643,
    "modes": {
     "pure": {
      "group_win": 0.46682,
@@ -323,9 +323,9 @@
      "champion": 0.05564
     }
    },
-   "edge_pure": -0.032023128577164287,
+   "edge_pure": -0.0320231285771643,
    "ev_pure": -0.6568,
-   "edge_blend": -0.016583128577164284,
+   "edge_blend": -0.016583128577164298,
    "ev_blend": -0.4252,
    "kelly_blend": 0.0
   },
@@ -337,7 +337,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 20.0,
-   "market_implied": 0.040336828269005,
+   "market_implied": 0.04033682826900501,
    "modes": {
     "pure": {
      "group_win": 0.5374,
@@ -367,9 +367,9 @@
      "champion": 0.0424
     }
    },
-   "edge_pure": -0.014196828269004997,
+   "edge_pure": -0.01419682826900501,
    "ev_pure": -0.47719999999999996,
-   "edge_blend": -0.005376828269004999,
+   "edge_blend": -0.005376828269005013,
    "ev_blend": -0.30080000000000007,
    "kelly_blend": 0.0
   },
@@ -381,7 +381,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 41.0,
-   "market_implied": 0.01868955106795504,
+   "market_implied": 0.018689551067955043,
    "modes": {
     "pure": {
      "group_win": 0.4755,
@@ -411,9 +411,9 @@
      "champion": 0.01946
     }
    },
-   "edge_pure": 0.02117044893204496,
+   "edge_pure": 0.021170448932044957,
    "ev_pure": 0.63426,
-   "edge_blend": 0.00941044893204496,
+   "edge_blend": 0.009410448932044957,
    "ev_blend": 0.1520999999999999,
    "kelly_blend": 0.0038024999999999977
   },
@@ -425,7 +425,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 30.0,
-   "market_implied": 0.026120822873841036,
+   "market_implied": 0.02612082287384104,
    "modes": {
     "pure": {
      "group_win": 0.21048,
@@ -455,9 +455,9 @@
      "champion": 0.02546
     }
    },
-   "edge_pure": -0.010600822873841035,
+   "edge_pure": -0.010600822873841039,
    "ev_pure": -0.5344,
-   "edge_blend": -0.005660822873841037,
+   "edge_blend": -0.005660822873841041,
    "ev_blend": -0.3862,
    "kelly_blend": 0.0
   },
@@ -469,7 +469,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 37.5,
-   "market_implied": 0.02056503981789352,
+   "market_implied": 0.020565039817893527,
    "modes": {
     "pure": {
      "group_win": 0.6321,
@@ -499,9 +499,9 @@
      "champion": 0.02072
     }
    },
-   "edge_pure": -0.00738503981789352,
+   "edge_pure": -0.007385039817893527,
    "ev_pure": -0.5057499999999999,
-   "edge_blend": -0.002725039817893519,
+   "edge_blend": -0.0027250398178935258,
    "ev_blend": -0.33099999999999996,
    "kelly_blend": 0.0
   },
@@ -513,7 +513,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 53.5,
-   "market_implied": 0.014052188459978148,
+   "market_implied": 0.014052188459978151,
    "modes": {
     "pure": {
      "group_win": 0.38908,
@@ -543,9 +543,9 @@
      "champion": 0.01556
     }
    },
-   "edge_pure": -0.001912188459978148,
+   "edge_pure": -0.0019121884599781515,
    "ev_pure": -0.35051,
-   "edge_blend": 0.001127811540021853,
+   "edge_blend": 0.0011278115400218496,
    "ev_blend": -0.18786999999999998,
    "kelly_blend": 0.0
   },
@@ -557,7 +557,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 90.5,
-   "market_implied": 0.00799987438279125,
+   "market_implied": 0.007999874382791252,
    "modes": {
     "pure": {
      "group_win": 0.48318,
@@ -587,9 +587,9 @@
      "champion": 0.00876
     }
    },
-   "edge_pure": 0.01704012561720875,
+   "edge_pure": 0.017040125617208746,
    "ev_pure": 1.26612,
-   "edge_blend": 0.006100125617208749,
+   "edge_blend": 0.006100125617208747,
    "ev_blend": 0.2760499999999999,
    "kelly_blend": 0.0030843575418994405
   },
@@ -601,7 +601,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 63.0,
-   "market_implied": 0.011794194832621703,
+   "market_implied": 0.011794194832621705,
    "modes": {
     "pure": {
      "group_win": 0.75376,
@@ -631,9 +631,9 @@
      "champion": 0.01078
     }
    },
-   "edge_pure": 0.003505805167378296,
+   "edge_pure": 0.0035058051673782942,
    "ev_pure": -0.03610000000000002,
-   "edge_blend": 0.002265805167378296,
+   "edge_blend": 0.0022658051673782945,
    "ev_blend": -0.11421999999999999,
    "kelly_blend": 0.0
   },
@@ -645,7 +645,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 66.5,
-   "market_implied": 0.011130223589914542,
+   "market_implied": 0.011130223589914546,
    "modes": {
     "pure": {
      "group_win": 0.49246,
@@ -675,9 +675,9 @@
      "champion": 0.0105
     }
    },
-   "edge_pure": 0.002949776410085458,
+   "edge_pure": 0.0029497764100854546,
    "ev_pure": -0.06367999999999996,
-   "edge_blend": 0.0010097764100854573,
+   "edge_blend": 0.0010097764100854539,
    "ev_blend": -0.19269000000000003,
    "kelly_blend": 0.0
   },
@@ -689,7 +689,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 74.0,
-   "market_implied": 0.009925828524970239,
+   "market_implied": 0.009925828524970242,
    "modes": {
     "pure": {
      "group_win": 0.1336,
@@ -719,9 +719,9 @@
      "champion": 0.0105
     }
    },
-   "edge_pure": -2.582852497023773e-05,
+   "edge_pure": -2.58285249702412e-05,
    "ev_pure": -0.26739999999999997,
-   "edge_blend": 0.001174171475029762,
+   "edge_blend": 0.0011741714750297585,
    "ev_blend": -0.17859999999999998,
    "kelly_blend": 0.0
   },
@@ -733,7 +733,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 86.0,
-   "market_implied": 0.008449309024355794,
+   "market_implied": 0.008449309024355795,
    "modes": {
     "pure": {
      "group_win": 0.29226,
@@ -763,9 +763,9 @@
      "champion": 0.00814
     }
    },
-   "edge_pure": 0.005590690975644207,
+   "edge_pure": 0.005590690975644205,
    "ev_pure": 0.20744000000000007,
-   "edge_blend": 0.0026106909756442066,
+   "edge_blend": 0.002610690975644205,
    "ev_blend": -0.048839999999999995,
    "kelly_blend": 0.0
   },
@@ -777,7 +777,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 95.5,
-   "market_implied": 0.00755186323926211,
+   "market_implied": 0.007551863239262112,
    "modes": {
     "pure": {
      "group_win": 0.44238,
@@ -807,9 +807,9 @@
      "champion": 0.0071
     }
    },
-   "edge_pure": 0.00722813676073789,
+   "edge_pure": 0.007228136760737888,
    "ev_pure": 0.4114899999999999,
-   "edge_blend": 0.0030681367607378893,
+   "edge_blend": 0.0030681367607378876,
    "ev_blend": 0.014209999999999834,
    "kelly_blend": 0.0001503703703703686
   },
@@ -821,7 +821,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 51.0,
-   "market_implied": 0.014791680144143629,
+   "market_implied": 0.014791680144143633,
    "modes": {
     "pure": {
      "group_win": 0.19078,
@@ -851,9 +851,9 @@
      "champion": 0.0162
     }
    },
-   "edge_pure": -0.01171168014414363,
+   "edge_pure": -0.011711680144143633,
    "ev_pure": -0.84292,
-   "edge_blend": -0.006651680144143629,
+   "edge_blend": -0.006651680144143633,
    "ev_blend": -0.5848599999999999,
    "kelly_blend": 0.0
   },
@@ -865,7 +865,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 64.0,
-   "market_implied": 0.01159681071163892,
+   "market_implied": 0.011596810711638924,
    "modes": {
     "pure": {
      "group_win": 0.20804,
@@ -895,9 +895,9 @@
      "champion": 0.01256
     }
    },
-   "edge_pure": -0.008596810711638921,
+   "edge_pure": -0.008596810711638925,
    "ev_pure": -0.808,
-   "edge_blend": -0.00425681071163892,
+   "edge_blend": -0.004256810711638924,
    "ev_blend": -0.53024,
    "kelly_blend": 0.0
   },
@@ -909,7 +909,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 101.0,
-   "market_implied": 0.00711201730969694,
+   "market_implied": 0.007112017309696942,
    "modes": {
     "pure": {
      "group_win": 0.12272,
@@ -939,9 +939,9 @@
      "champion": 0.00696
     }
    },
-   "edge_pure": -0.00187201730969694,
+   "edge_pure": -0.0018720173096969418,
    "ev_pure": -0.47076000000000007,
-   "edge_blend": -0.0007320173096969397,
+   "edge_blend": -0.0007320173096969414,
    "ev_blend": -0.35561999999999994,
    "kelly_blend": 0.0
   },
@@ -953,7 +953,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 176.0,
-   "market_implied": 0.003922030672540539,
+   "market_implied": 0.00392203067254054,
    "modes": {
     "pure": {
      "group_win": 0.48216,
@@ -983,9 +983,9 @@
      "champion": 0.00404
     }
    },
-   "edge_pure": 0.00021796932745946074,
+   "edge_pure": 0.00021796932745945987,
    "ev_pure": -0.27136000000000005,
-   "edge_blend": 0.0002379693274594608,
+   "edge_blend": 0.00023796932745945992,
    "ev_blend": -0.2678400000000001,
    "kelly_blend": 0.0
   },
@@ -997,7 +997,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 226.0,
-   "market_implied": 0.0030000617864473765,
+   "market_implied": 0.003000061786447377,
    "modes": {
     "pure": {
      "group_win": 0.225,
@@ -1027,9 +1027,9 @@
      "champion": 0.00408
     }
    },
-   "edge_pure": 0.0009799382135526236,
+   "edge_pure": 0.0009799382135526231,
    "ev_pure": -0.10051999999999994,
-   "edge_blend": 0.0006999382135526237,
+   "edge_blend": 0.0006999382135526233,
    "ev_blend": -0.16379999999999995,
    "kelly_blend": 0.0
   },
@@ -1041,7 +1041,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 151.0,
-   "market_implied": 0.004621857167549681,
+   "market_implied": 0.004621857167549682,
    "modes": {
     "pure": {
      "group_win": 0.0838,
@@ -1071,9 +1071,9 @@
      "champion": 0.00364
     }
    },
-   "edge_pure": -0.001861857167549681,
+   "edge_pure": -0.0018618571675496818,
    "ev_pure": -0.58324,
-   "edge_blend": -0.0009618571675496807,
+   "edge_blend": -0.0009618571675496816,
    "ev_blend": -0.44733999999999996,
    "kelly_blend": 0.0
   },
@@ -1085,7 +1085,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 226.0,
-   "market_implied": 0.0030000617864473765,
+   "market_implied": 0.003000061786447377,
    "modes": {
     "pure": {
      "group_win": 0.12314,
@@ -1115,9 +1115,9 @@
      "champion": 0.00102
     }
    },
-   "edge_pure": -0.0016600617864473764,
+   "edge_pure": -0.0016600617864473768,
    "ev_pure": -0.69716,
-   "edge_blend": -0.0017000617864473765,
+   "edge_blend": -0.001700061786447377,
    "ev_blend": -0.7061999999999999,
    "kelly_blend": 0.0
   },
@@ -1129,7 +1129,7 @@
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 136.0,
-   "market_implied": 0.005170254506164154,
+   "market_implied": 0.005170254506164156,
    "modes": {
     "pure": {
      "group_win": 0.05596,
@@ -1159,9 +1159,9 @@
      "champion": 0.00432
     }
    },
-   "edge_pure": -0.004950254506164154,
+   "edge_pure": -0.004950254506164156,
    "ev_pure": -0.97008,
-   "edge_blend": -0.003930254506164154,
+   "edge_blend": -0.003930254506164156,
    "ev_blend": -0.83136,
    "kelly_blend": 0.0
   },
@@ -1173,7 +1173,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 601.0,
-   "market_implied": 0.0010517524501786114,
+   "market_implied": 0.0010517524501786116,
    "modes": {
     "pure": {
      "group_win": 0.23514,
@@ -1203,9 +1203,9 @@
      "champion": 0.00066
     }
    },
-   "edge_pure": 0.00020824754982138867,
+   "edge_pure": 0.00020824754982138845,
    "ev_pure": -0.24273999999999996,
-   "edge_blend": 6.824754982138852e-05,
+   "edge_blend": 6.82475498213883e-05,
    "ev_blend": -0.32688000000000006,
    "kelly_blend": 0.0
   },
@@ -1217,7 +1217,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 376.0,
-   "market_implied": 0.0017386095047851392,
+   "market_implied": 0.0017386095047851396,
    "modes": {
     "pure": {
      "group_win": 0.04186,
@@ -1247,9 +1247,9 @@
      "champion": 0.00132
     }
    },
-   "edge_pure": -0.001118609504785139,
+   "edge_pure": -0.0011186095047851395,
    "ev_pure": -0.76688,
-   "edge_blend": -0.0006586095047851391,
+   "edge_blend": -0.0006586095047851396,
    "ev_blend": -0.59392,
    "kelly_blend": 0.0
   },
@@ -1261,7 +1261,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 520.5,
-   "market_implied": 0.0012269996959803065,
+   "market_implied": 0.001226999695980307,
    "modes": {
     "pure": {
      "group_win": 0.12458,
@@ -1291,9 +1291,9 @@
      "champion": 0.00084
     }
    },
-   "edge_pure": -0.0005869996959803064,
+   "edge_pure": -0.0005869996959803069,
    "ev_pure": -0.6668799999999999,
-   "edge_blend": -0.00018699969598030657,
+   "edge_blend": -0.000186999695980307,
    "ev_blend": -0.4586800000000001,
    "kelly_blend": 0.0
   },
@@ -1305,7 +1305,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 401.0,
-   "market_implied": 0.0016227117237491155,
+   "market_implied": 0.0016227117237491157,
    "modes": {
     "pure": {
      "group_win": 0.13008,
@@ -1335,9 +1335,9 @@
      "champion": 0.00102
     }
    },
-   "edge_pure": -0.0008227117237491155,
+   "edge_pure": -0.0008227117237491157,
    "ev_pure": -0.6792,
-   "edge_blend": -0.0007827117237491155,
+   "edge_blend": -0.0007827117237491157,
    "ev_blend": -0.66316,
    "kelly_blend": 0.0
   },
@@ -1349,7 +1349,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 276.0,
-   "market_implied": 0.0024216255516075645,
+   "market_implied": 0.002421625551607565,
    "modes": {
     "pure": {
      "group_win": 0.11096,
@@ -1379,9 +1379,9 @@
      "champion": 0.0006
     }
    },
-   "edge_pure": -0.0019816255516075646,
+   "edge_pure": -0.001981625551607565,
    "ev_pure": -0.87856,
-   "edge_blend": -0.0018616255516075645,
+   "edge_blend": -0.001861625551607565,
    "ev_blend": -0.84544,
    "kelly_blend": 0.0
   },
@@ -1393,7 +1393,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 1001.0,
-   "market_implied": 0.000608794553712391,
+   "market_implied": 0.0006087945537123911,
    "modes": {
     "pure": {
      "group_win": 0.04802,
@@ -1423,9 +1423,9 @@
      "champion": 0.00022
     }
    },
-   "edge_pure": -0.000288794553712391,
+   "edge_pure": -0.0002887945537123911,
    "ev_pure": -0.67968,
-   "edge_blend": -0.000268794553712391,
+   "edge_blend": -0.0002687945537123911,
    "ev_blend": -0.6596599999999999,
    "kelly_blend": 0.0
   },
@@ -1437,7 +1437,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 301.0,
-   "market_implied": 0.0022067340265810903,
+   "market_implied": 0.0022067340265810908,
    "modes": {
     "pure": {
      "group_win": 0.1116,
@@ -1467,9 +1467,9 @@
      "champion": 0.00032
     }
    },
-   "edge_pure": -0.00196673402658109,
+   "edge_pure": -0.0019667340265810906,
    "ev_pure": -0.92776,
-   "edge_blend": -0.00198673402658109,
+   "edge_blend": -0.0019867340265810906,
    "ev_blend": -0.93378,
    "kelly_blend": 0.0
   },
@@ -1481,7 +1481,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 275.5,
-   "market_implied": 0.0024263358888358317,
+   "market_implied": 0.002426335888835832,
    "modes": {
     "pure": {
      "group_win": 0.04928,
@@ -1511,9 +1511,9 @@
      "champion": 0.00028
     }
    },
-   "edge_pure": -0.002306335888835832,
+   "edge_pure": -0.0023063358888358323,
    "ev_pure": -0.96694,
-   "edge_blend": -0.0022663358888358317,
+   "edge_blend": -0.002266335888835832,
    "ev_blend": -0.95592,
    "kelly_blend": 0.0
   },
@@ -1525,7 +1525,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 1501.0,
-   "market_implied": 0.00039437636540905424,
+   "market_implied": 0.0003943763654090543,
    "modes": {
     "pure": {
      "group_win": 0.03068,
@@ -1555,9 +1555,9 @@
      "champion": 0.0002
     }
    },
-   "edge_pure": -0.00027437636540905426,
+   "edge_pure": -0.0002743763654090543,
    "ev_pure": -0.8198799999999999,
-   "edge_blend": -0.00025437636540905426,
+   "edge_blend": -0.0002543763654090543,
    "ev_blend": -0.78986,
    "kelly_blend": 0.0
   },
@@ -1569,7 +1569,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 2251.0,
-   "market_implied": 0.0002554461487152976,
+   "market_implied": 0.00025544614871529767,
    "modes": {
     "pure": {
      "group_win": 0.0112,
@@ -1599,9 +1599,9 @@
      "champion": 2e-05
     }
    },
-   "edge_pure": -0.00019544614871529762,
+   "edge_pure": -0.00019544614871529767,
    "ev_pure": -0.86494,
-   "edge_blend": -0.00017544614871529762,
+   "edge_blend": -0.00017544614871529767,
    "ev_blend": -0.81992,
    "kelly_blend": 0.0
   },
@@ -1613,7 +1613,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 376.0,
-   "market_implied": 0.0017386095047851392,
+   "market_implied": 0.0017386095047851396,
    "modes": {
     "pure": {
      "group_win": 0.02444,
@@ -1643,9 +1643,9 @@
      "champion": 4e-05
     }
    },
-   "edge_pure": -0.0016786095047851392,
+   "edge_pure": -0.0016786095047851396,
    "ev_pure": -0.97744,
-   "edge_blend": -0.0016786095047851392,
+   "edge_blend": -0.0016786095047851396,
    "ev_blend": -0.97744,
    "kelly_blend": 0.0
   },
@@ -1657,7 +1657,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 501.0,
-   "market_implied": 0.001278251367535606,
+   "market_implied": 0.0012782513675356063,
    "modes": {
     "pure": {
      "group_win": 0.01756,
@@ -1687,9 +1687,9 @@
      "champion": 4e-05
     }
    },
-   "edge_pure": -0.0012382513675356058,
+   "edge_pure": -0.0012382513675356062,
    "ev_pure": -0.9799599999999999,
-   "edge_blend": -0.0012582513675356058,
+   "edge_blend": -0.0012582513675356063,
    "ev_blend": -0.98998,
    "kelly_blend": 0.0
   },
@@ -1701,7 +1701,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 1501.0,
-   "market_implied": 0.00039437636540905424,
+   "market_implied": 0.0003943763654090543,
    "modes": {
     "pure": {
      "group_win": 0.02116,
@@ -1731,9 +1731,9 @@
      "champion": 0.0
     }
    },
-   "edge_pure": -0.00039437636540905424,
+   "edge_pure": -0.0003943763654090543,
    "ev_pure": -1.0,
-   "edge_blend": -0.00037437636540905425,
+   "edge_blend": -0.0003743763654090543,
    "ev_blend": -0.96998,
    "kelly_blend": 0.0
   },
@@ -1745,7 +1745,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 1001.0,
-   "market_implied": 0.000608794553712391,
+   "market_implied": 0.0006087945537123911,
    "modes": {
     "pure": {
      "group_win": 0.0026,
@@ -1775,9 +1775,9 @@
      "champion": 0.0
     }
    },
-   "edge_pure": -0.000608794553712391,
+   "edge_pure": -0.0006087945537123911,
    "ev_pure": -1.0,
-   "edge_blend": -0.000588794553712391,
+   "edge_blend": -0.0005887945537123911,
    "ev_blend": -0.97998,
    "kelly_blend": 0.0
   },
@@ -1789,7 +1789,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 1251.0,
-   "market_implied": 0.00047940930707304996,
+   "market_implied": 0.00047940930707305007,
    "modes": {
     "pure": {
      "group_win": 0.00338,
@@ -1819,9 +1819,9 @@
      "champion": 0.0
     }
    },
-   "edge_pure": -0.00047940930707304996,
+   "edge_pure": -0.00047940930707305007,
    "ev_pure": -1.0,
-   "edge_blend": -0.00045940930707304996,
+   "edge_blend": -0.00045940930707305007,
    "ev_blend": -0.97498,
    "kelly_blend": 0.0
   },
@@ -1833,7 +1833,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 875.5,
-   "market_implied": 0.0007027799224661656,
+   "market_implied": 0.0007027799224661658,
    "modes": {
     "pure": {
      "group_win": 0.01084,
@@ -1863,9 +1863,9 @@
      "champion": 4e-05
     }
    },
-   "edge_pure": -0.0006227799224661656,
+   "edge_pure": -0.0006227799224661658,
    "ev_pure": -0.92996,
-   "edge_blend": -0.0006827799224661655,
+   "edge_blend": -0.0006827799224661657,
    "ev_blend": -0.98249,
    "kelly_blend": 0.0
   },
@@ -1877,7 +1877,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 1000.5,
-   "market_implied": 0.0006091206154376857,
+   "market_implied": 0.0006091206154376858,
    "modes": {
     "pure": {
      "group_win": 0.0052,
@@ -1907,9 +1907,9 @@
      "champion": 0.0
     }
    },
-   "edge_pure": -0.0006091206154376857,
+   "edge_pure": -0.0006091206154376858,
    "ev_pure": -1.0,
-   "edge_blend": -0.0006091206154376857,
+   "edge_blend": -0.0006091206154376858,
    "ev_blend": -1.0,
    "kelly_blend": 0.0
   },
@@ -1921,7 +1921,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 1001.0,
-   "market_implied": 0.000608794553712391,
+   "market_implied": 0.0006087945537123911,
    "modes": {
     "pure": {
      "group_win": 0.00094,
@@ -1951,9 +1951,9 @@
      "champion": 0.0
     }
    },
-   "edge_pure": -0.000608794553712391,
+   "edge_pure": -0.0006087945537123911,
    "ev_pure": -1.0,
-   "edge_blend": -0.000608794553712391,
+   "edge_blend": -0.0006087945537123911,
    "ev_blend": -1.0,
    "kelly_blend": 0.0
   },
@@ -1965,7 +1965,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 2251.0,
-   "market_implied": 0.0002554461487152976,
+   "market_implied": 0.00025544614871529767,
    "modes": {
     "pure": {
      "group_win": 0.00434,
@@ -1995,9 +1995,9 @@
      "champion": 0.0
     }
    },
-   "edge_pure": -0.0002554461487152976,
+   "edge_pure": -0.00025544614871529767,
    "ev_pure": -1.0,
-   "edge_blend": -0.0002554461487152976,
+   "edge_blend": -0.00025544614871529767,
    "ev_blend": -1.0,
    "kelly_blend": 0.0
   },
@@ -2009,7 +2009,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 2001.0,
-   "market_implied": 0.0002897964490728592,
+   "market_implied": 0.00028979644907285924,
    "modes": {
     "pure": {
      "group_win": 0.00072,
@@ -2039,9 +2039,9 @@
      "champion": 0.0
     }
    },
-   "edge_pure": -0.0002897964490728592,
+   "edge_pure": -0.00028979644907285924,
    "ev_pure": -1.0,
-   "edge_blend": -0.0002897964490728592,
+   "edge_blend": -0.00028979644907285924,
    "ev_blend": -1.0,
    "kelly_blend": 0.0
   },
@@ -2053,7 +2053,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 1001.0,
-   "market_implied": 0.000608794553712391,
+   "market_implied": 0.0006087945537123911,
    "modes": {
     "pure": {
      "group_win": 0.00258,
@@ -2083,9 +2083,9 @@
      "champion": 2e-05
     }
    },
-   "edge_pure": -0.000588794553712391,
+   "edge_pure": -0.0005887945537123911,
    "ev_pure": -0.97998,
-   "edge_blend": -0.000608794553712391,
+   "edge_blend": -0.0006087945537123911,
    "ev_blend": -1.0,
    "kelly_blend": 0.0
   },
@@ -2097,7 +2097,7 @@
    "manual": 0.0,
    "calibrated": false,
    "odds_decimal": 351.0,
-   "market_implied": 0.0018716509891699212,
+   "market_implied": 0.0018716509891699216,
    "modes": {
     "pure": {
      "group_win": 0.00108,
@@ -2127,9 +2127,9 @@
      "champion": 0.0
     }
    },
-   "edge_pure": -0.0018716509891699212,
+   "edge_pure": -0.0018716509891699216,
    "ev_pure": -1.0,
-   "edge_blend": -0.0018716509891699212,
+   "edge_blend": -0.0018716509891699216,
    "ev_blend": -1.0,
    "kelly_blend": 0.0
   }
