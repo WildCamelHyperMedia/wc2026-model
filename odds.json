@@ -1,0 +1,20 @@
+{
+  "_howto": "Current bettable outright-winner odds (decimal). Refresh after big news or line moves, then run update.py. The calibration derives the market's injury/news signal from these.",
+  "as_of": "2026-06-10",
+  "source": "BetMGM",
+  "odds": {
+    "Spain": 5.5, "France": 6.0, "England": 8.0, "Portugal": 9.0,
+    "Argentina": 10.0, "Brazil": 10.0, "Germany": 15.0, "Netherlands": 21.0,
+    "Belgium": 34.0, "Norway": 34.0, "Colombia": 41.0, "Morocco": 41.0,
+    "Japan": 51.0, "United States": 51.0, "Mexico": 67.0, "Senegal": 67.0,
+    "Switzerland": 67.0, "Turkey": 67.0, "Uruguay": 67.0, "Croatia": 81.0,
+    "Ecuador": 81.0, "Sweden": 101.0, "Austria": 151.0, "Canada": 151.0,
+    "Ivory Coast": 201.0, "Algeria": 251.0, "Bosnia-Herzegovina": 251.0,
+    "Czechia": 251.0, "Egypt": 251.0, "South Korea": 251.0, "Paraguay": 251.0,
+    "Scotland": 251.0, "Australia": 501.0, "Ghana": 501.0, "Iran": 501.0,
+    "Tunisia": 501.0, "DR Congo": 751.0, "Cape Verde": 1001.0, "Iraq": 1001.0,
+    "Jordan": 1001.0, "New Zealand": 1001.0, "Panama": 1001.0, "Qatar": 1001.0,
+    "Saudi Arabia": 1001.0, "South Africa": 1001.0, "Uzbekistan": 1001.0,
+    "Curacao": 2501.0, "Haiti": 2501.0
+  }
+}

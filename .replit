@@ -1,0 +1,5 @@
+run = "python3 serve.py"
+entrypoint = "serve.py"
+
+[deployment]
+run = ["python3", "serve.py"]

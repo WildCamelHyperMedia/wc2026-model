@@ -1,0 +1,4 @@
+{
+  "_howto": "Manual Elo tweaks for breaking news the market hasn't priced yet. Example: {\"France\": -25, \"Spain\": -40}. Applied in ALL modes on next update.py run. Rule of thumb: star player out ≈ -25 to -50; two key starters ≈ -60; keeper out ≈ -15.",
+  "adjustments": {}
+}
