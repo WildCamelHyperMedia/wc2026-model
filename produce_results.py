@@ -81,6 +81,10 @@ for n, rd, g, a, b, res in M.GROUP_FIX:
     for mode, alpha in MODES.items():
         pw, pd, pl = M.match_probs(a, b, OFFSETS, alpha, "group", pen_a, pen_b)
         entry["probs"][mode] = [round(pw, 4), round(pd, 4), round(pl, 4)]
+    bk = M.BOOK.get((a, b))
+    if bk and res is None:
+        entry["book"] = bk[0]
+        entry["book_n"] = bk[1]
     matches.append(entry)
 matches.sort(key=lambda m: m["utc"])
 assert len(matches) == 72

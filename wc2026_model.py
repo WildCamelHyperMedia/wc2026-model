@@ -132,6 +132,29 @@ MANUAL = {t: float(v) for t, v in
           _load("adjustments.json", {}).get("adjustments", {}).items()
           if t in TEAMS}
 
+# live bookmaker 1X2 consensus per fixture (from odds_fetch.py)
+_book_data = _load("match_odds.json", {})
+BOOK = {}
+for _k, _v in _book_data.get("events", {}).items():
+    _h, _a = _k.split("|")
+    if _h in TEAMS and _a in TEAMS:
+        BOOK[(_h, _a)] = (_v["probs"], _v.get("n_books", 0))
+BOOK_AS_OF = _book_data.get("as_of", "—")
+
+def _mix_book(p_model, a, b, alpha):
+    """Blend model 1X2 with bookmaker consensus by alpha (mode weight)."""
+    entry = BOOK.get((a, b))
+    flip = False
+    if entry is None:
+        entry = BOOK.get((b, a))
+        flip = True
+    if entry is None or alpha <= 0:
+        return p_model
+    bp = entry[0][::-1] if flip else entry[0]
+    mixed = [(1 - alpha) * pm + alpha * pb for pm, pb in zip(p_model, bp)]
+    s = sum(mixed)
+    return tuple(x / s for x in mixed)
+
 # ---- fixtures & recorded results ----
 _fixtures = _load("fixtures.json", [])
 GROUP_FIX = []   # (match_n, round, group, home, away, result_or_None)
@@ -229,11 +252,14 @@ def _wdl(ra, rb):
     s = pa + pd + pb
     return pa / s, pd / s, pb / s, dr
 
-def match_probs(a, b, offsets=None, alpha=0.0, stage="group", pen_a=0.0, pen_b=0.0):
-    """1X2 probabilities, optionally with rotation penalties."""
+def match_probs(a, b, offsets=None, alpha=0.0, stage="group", pen_a=0.0, pen_b=0.0,
+                use_book=True):
+    """1X2 probabilities: Elo model blended with live book consensus by alpha."""
     ra = effective(a, offsets, alpha) + host_bonus(a, stage) - pen_a
     rb = effective(b, offsets, alpha) + host_bonus(b, stage) - pen_b
     pw, pd, pl, _ = _wdl(ra, rb)
+    if use_book:
+        pw, pd, pl = _mix_book((pw, pd, pl), a, b, alpha)
     return pw, pd, pl
 
 def locked_top2(pts, team, group_teams):
@@ -249,14 +275,18 @@ def run(offsets=None, alpha=0.0, n_sims=50_000, seed=20260611, r32_counter=None)
     # precompute group match variants
     # rounds 1-2: single variant; round 3: 4 variants keyed (lockA, lockB)
     pre = {}
+    def _variant(a, b, ra, rb):
+        pa, pd, pl, dr = _wdl(ra, rb)
+        pa, pd, pl = _mix_book((pa, pd, pl), a, b, alpha)
+        return pa, pd, pl, dr
     for n, rd, g, a, b, res in GROUP_FIX:
         ra = R[a] + host_bonus(a, "group")
         rb = R[b] + host_bonus(b, "group")
         if rd < 3:
-            pre[n] = {(False, False): _wdl(ra, rb)}
+            pre[n] = {(False, False): _variant(a, b, ra, rb)}
         else:
-            pre[n] = {(la, lb): _wdl(ra - ROTATION_PENALTY * la,
-                                     rb - ROTATION_PENALTY * lb)
+            pre[n] = {(la, lb): _variant(a, b, ra - ROTATION_PENALTY * la,
+                                         rb - ROTATION_PENALTY * lb)
                       for la in (False, True) for lb in (False, True)}
 
     by_group = defaultdict(list)
@@ -267,8 +297,14 @@ def run(offsets=None, alpha=0.0, n_sims=50_000, seed=20260611, r32_counter=None)
     def ko_p(a, b, stage):
         k = (a, b, stage)
         if k not in ko_cache:
-            ko_cache[k] = win_expectancy(R[a] + host_bonus(a, stage),
-                                         R[b] + host_bonus(b, stage))
+            we = win_expectancy(R[a] + host_bonus(a, stage),
+                                R[b] + host_bonus(b, stage))
+            entry = BOOK.get((a, b)) or BOOK.get((b, a))
+            if entry is not None and alpha > 0:
+                bp = entry[0] if (a, b) in BOOK else entry[0][::-1]
+                p_adv_book = bp[0] + 0.5 * bp[1]   # draw -> ET/pens ~ even
+                we = (1 - alpha) * we + alpha * p_adv_book
+            ko_cache[k] = we
         return ko_cache[k]
 
     counts = {t: Counter() for t in TEAMS}
@@ -401,4 +437,5 @@ def freshness():
         "results_locked": RESULTS_LOCKED,
         "manual_adjustments": dict(MANUAL),
         "ko_slots_known": len(KO_SLOTS), "ko_winners_known": len(KO_WINNERS),
+        "book_fixtures": len(BOOK), "book_as_of": BOOK_AS_OF,
     }

@@ -23,6 +23,8 @@ jobs:
           python-version: "3.12"
 
       - name: Run update pipeline (fetch → calibrate → simulate → build)
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python update.py
 
       - name: Commit refreshed dashboard & data

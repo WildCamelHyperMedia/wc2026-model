@@ -152,6 +152,12 @@ def run_once(fetch=True):
         fetch_elo()
         fetch_results()
         fetch_market()
+        try:
+            import odds_fetch
+            print(f"✓ Book match odds: {odds_fetch.fetch_match_odds()}")
+            print(f"✓ Book outrights:  {odds_fetch.fetch_outrights()}")
+        except Exception as e:
+            print(f"⚠ Book odds fetch skipped ({e})")
 
     prev = {}
     if os.path.exists("wc2026_results_v2.json"):

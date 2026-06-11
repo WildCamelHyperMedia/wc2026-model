@@ -299,16 +299,27 @@ function renderMatches(){
       const nm=`M${m.n} · ${m.home} v ${m.away}${rot}`;
       // per-mode detail table
       const MODE_LAB={pure:'Pure Elo',blend:'Blended ★',market:'Market'};
-      const det=MODES3.map((md,i)=>{
+      let det=MODES3.map((md,i)=>{
         const[w,x,l]=m.probs[md];
         const pk=picks[i].s;
         const cell=(nmx,v)=>`<td class="${pk===nmx?'picked':''}">${nmx==='Draw'?'draw':nmx} ${(v*100).toFixed(0)}%</td>`;
         return `<tr><td class="mlab">${MODE_LAB[md]}</td>${cell(m.home,w)}${cell('Draw',x)}${cell(m.away,l)}
           <td style="color:#5a6580">fair ${(1/w).toFixed(2)} / ${(1/x).toFixed(1)} / ${(1/l).toFixed(1)}</td></tr>`;
       }).join('');
-      const verdict=agree===3?`All three projections pick <b>${lead}</b>.`
+      let valueLine='';
+      if(m.book){
+        const[bw,bx,bl]=m.book;
+        det+=`<tr><td class="mlab" style="color:var(--gold)">Books (${m.book_n})</td>
+          <td>${m.home} ${(bw*100).toFixed(0)}%</td><td>draw ${(bx*100).toFixed(0)}%</td><td>${m.away} ${(bl*100).toFixed(0)}%</td>
+          <td style="color:#5a6580">fair ${(1/bw).toFixed(2)} / ${(1/bx).toFixed(1)} / ${(1/bl).toFixed(1)}</td></tr>`;
+        const[pw0,px0,pl0]=m.probs.pure;
+        const dH=pw0-bw, dA=pl0-bl;
+        if(dH>=0.05) valueLine=`⚡ <b>Value check:</b> pure model rates <b>${m.home}</b> ${(dH*100).toFixed(0)}pp above book consensus — worth comparing your book's price to fair ${(1/pw0).toFixed(2)}.`;
+        else if(dA>=0.05) valueLine=`⚡ <b>Value check:</b> pure model rates <b>${m.away}</b> ${(dA*100).toFixed(0)}pp above book consensus — worth comparing your book's price to fair ${(1/pl0).toFixed(2)}.`;
+      }
+      const verdict=(agree===3?`All three projections pick <b>${lead}</b>.`
         :agree===2?`Two of three pick <b>${lead}</b>; ${MODE_LAB[MODES3[picks.findIndex(p=>p.s!==lead)]]} disagrees.`
-        :`No consensus — treat as a coin flip.`;
+        :`No consensus — treat as a coin flip.`)+(valueLine?`<br>${valueLine}`:'');
       return `<div class="mrow" data-mx="${m.n}">
         <span class="tm">${t}</span><span class="gtag">${m.group}</span>
         <span class="vs">${nm}<span class="venue">${m.venue}</span></span>
