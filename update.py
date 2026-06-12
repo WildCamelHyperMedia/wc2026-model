@@ -47,11 +47,15 @@ def fetch_elo():
         return
     old = dict(M.ELO)
     json.dump({"as_of": NOW, "elo": elo}, open("elo_live.json", "w"), indent=1)
-    moves = sorted(((t, elo[t] - old[t]) for t in elo if abs(elo[t] - old[t]) >= 1),
-                   key=lambda x: -abs(x[1]))
-    print(f"✓ Elo refreshed ({NOW})" +
-          (": " + ", ".join(f"{t} {d:+d}" for t, d in moves[:8]) if moves
-           else " — no changes"))
+    try:
+        moves = sorted(((t, float(elo[t]) - float(old.get(t, elo[t])))
+                        for t in elo if abs(elo[t] - old.get(t, elo[t])) >= 1),
+                       key=lambda x: -abs(x[1]))
+        detail = (": " + ", ".join(f"{t} {d:+.0f}" for t, d in moves[:8])
+                  if moves else " — no changes")
+    except Exception:
+        detail = ""
+    print(f"✓ Elo refreshed ({NOW}){detail}")
 
 def fetch_results():
     try:
