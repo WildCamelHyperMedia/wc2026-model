@@ -362,8 +362,10 @@ function renderMatches(){
           const sets={...m.pre.probs}; if(m.pre.book)sets.book=m.pre.book;
           det=Object.keys(SBL).filter(k=>sets[k]).map(k=>{
             const p=sets[k],v=m.verdicts[k];
+            const lab=k==='book'&&m.pre.book_mins_before_ko!=null
+              ?`${SBL[k]} <span style="color:#5a6580;text-transform:none">(closing line, ${m.pre.book_mins_before_ko}m pre-KO)</span>`:SBL[k];
             const cell=(i,nmx)=>`<td class="${v.pick===i?(v.correct?'picked':'neg'):''}">${nmx} ${(p[i]*100).toFixed(0)}%</td>`;
-            return `<tr><td class="mlab">${SBL[k]}</td>${cell(0,m.home)}${cell(1,'draw')}${cell(2,m.away)}
+            return `<tr><td class="mlab">${lab}</td>${cell(0,m.home)}${cell(1,'draw')}${cell(2,m.away)}
               <td>${v.correct?'<span class="pos">✓</span>':'<span class="neg">✗</span>'} Brier ${v.brier.toFixed(3)}</td></tr>`;
           }).join('');
           const best=Object.keys(m.verdicts).sort((a,b)=>m.verdicts[a].brier-m.verdicts[b].brier)[0];

@@ -93,11 +93,17 @@ assert len(matches) == 72
 import os
 GEN_TS = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 ledger = json.load(open("predictions.json")) if os.path.exists("predictions.json") else {}
+closing = json.load(open("closing_lines.json")) if os.path.exists("closing_lines.json") else {}
 for mt in matches:
     k = str(mt["n"])
     if "played" not in mt:
         # keep refreshing until kickoff result arrives, then it freezes forever
-        ledger[k] = {"probs": mt["probs"], "book": mt.get("book"), "as_of": GEN_TS}
+        entry = {"probs": mt["probs"], "book": mt.get("book"), "as_of": GEN_TS}
+        cl = closing.get(f'{mt["home"]}|{mt["away"]}')
+        if cl:  # use the closing-line snapshot as the book benchmark
+            entry["book"] = cl["probs"]
+            entry["book_mins_before_ko"] = cl.get("mins_before_ko")
+        ledger[k] = entry
     elif k in ledger:
         mt["pre"] = ledger[k]
 json.dump(ledger, open("predictions.json", "w"), indent=1)
