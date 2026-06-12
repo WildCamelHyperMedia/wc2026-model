@@ -89,6 +89,44 @@ for n, rd, g, a, b, res in M.GROUP_FIX:
 matches.sort(key=lambda m: m["utc"])
 assert len(matches) == 72
 
+# ---------- prediction ledger (frozen pre-match) + model scoreboard ----------
+import os
+GEN_TS = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+ledger = json.load(open("predictions.json")) if os.path.exists("predictions.json") else {}
+for mt in matches:
+    k = str(mt["n"])
+    if "played" not in mt:
+        # keep refreshing until kickoff result arrives, then it freezes forever
+        ledger[k] = {"probs": mt["probs"], "book": mt.get("book"), "as_of": GEN_TS}
+    elif k in ledger:
+        mt["pre"] = ledger[k]
+json.dump(ledger, open("predictions.json", "w"), indent=1)
+
+SCORE_KEYS = ["pure", "blend", "market", "book"]
+_sb = {mk: {"n": 0, "correct": 0, "brier": 0.0} for mk in SCORE_KEYS}
+for mt in matches:
+    if "played" not in mt or "pre" not in mt:
+        continue
+    hg, ag = mt["played"]
+    o = 0 if hg > ag else (1 if hg == ag else 2)
+    sets = dict(mt["pre"]["probs"])
+    if mt["pre"].get("book"):
+        sets["book"] = mt["pre"]["book"]
+    mt["outcome"] = o
+    mt["verdicts"] = {}
+    for mk, p in sets.items():
+        pick = max(range(3), key=lambda i: p[i])
+        brier = sum((p[i] - (1.0 if i == o else 0.0)) ** 2 for i in range(3))
+        mt["verdicts"][mk] = {"pick": pick, "correct": pick == o,
+                              "brier": round(brier, 3)}
+        if mk in _sb:
+            _sb[mk]["n"] += 1
+            _sb[mk]["correct"] += int(pick == o)
+            _sb[mk]["brier"] += brier
+scoreboard = {mk: {"n": v["n"], "correct": v["correct"],
+                   "avg_brier": round(v["brier"] / v["n"], 3) if v["n"] else None}
+              for mk, v in _sb.items()}
+
 # ---------- knockout schedule + projections ----------
 SLOT_LABELS = {73:"2A v 2B",74:"1E v 3rd",75:"1F v 2C",76:"1C v 2F",77:"1I v 3rd",
                78:"2E v 2I",79:"1A v 3rd",80:"1L v 3rd",81:"1D v 3rd",82:"1G v 3rd",
@@ -130,6 +168,7 @@ out = {
         },
     },
     "teams": teams, "finals": finals, "matches": matches, "ko": ko,
+    "scoreboard": scoreboard,
 }
 with open("wc2026_results_v2.json", "w") as f:
     json.dump(out, f, indent=1)

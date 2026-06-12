@@ -120,6 +120,12 @@ HTML = r"""<!DOCTYPE html>
 
   <div class="grid-kpi" id="kpis"></div>
 
+  <div class="panel" id="sbPanel" style="display:none">
+    <h2>🎯 Model scoreboard — who's been right so far</h2>
+    <div id="sbBody"></div>
+    <div class="note">Scored on probabilities <b>frozen before kickoff</b> (prediction ledger — no hindsight). Brier score = squared error across win/draw/loss; lower is better; 0.667 = chance-level for an even three-way. Click any finished match below for its per-model report card.</div>
+  </div>
+
   <div class="panel">
     <h2>Title probability — <span id="chartModeLab"></span> vs. market</h2>
     <canvas id="titleChart"></canvas>
@@ -192,7 +198,22 @@ HTML = r"""<!DOCTYPE html>
 <script>
 const DATA = __DATA__;
 const T = DATA.teams;
+const SBL={pure:'Pure Elo',blend:'Blended ★',market:'Market-anchored',book:'Books consensus'};
 let MODE = 'blend';
+
+// model scoreboard
+(function(){
+  const SB=DATA.scoreboard||{};
+  const ks=Object.keys(SBL).filter(k=>SB[k]&&SB[k].n>0);
+  if(!ks.length)return;
+  const best=[...ks].sort((a,b)=>SB[a].avg_brier-SB[b].avg_brier)[0];
+  document.getElementById('sbPanel').style.display='block';
+  document.getElementById('sbBody').innerHTML=
+    `<table><tr><th style="text-align:left">projection</th><th>picks correct</th><th>avg Brier ↓</th><th style="text-align:left"></th></tr>`+
+    ks.map(k=>`<tr ${k===best?'style="color:var(--accent)"':''}><td style="text-align:left;font-weight:600">${SBL[k]}</td>
+      <td>${SB[k].correct}/${SB[k].n}</td><td>${SB[k].avg_brier.toFixed(3)}</td>
+      <td style="text-align:left">${k===best?'🏆 leading':''}</td></tr>`).join('')+`</table>`;
+})();
 const pct = (x,d=1)=> (x*100).toFixed(d)+'%';
 const am = d => '+'+Math.round((d-1)*100);
 const P = (t,k)=> t.modes[MODE][k];
@@ -270,14 +291,36 @@ function renderMatches(){
     const head=`${DOW[dt.getDay()]} ${MON[dt.getMonth()]} ${dt.getDate()}`;
     const rows=ms.sort((a,b)=>a.dt-b.dt).map(m=>{
       const t=m.dt.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
-      if(m.played){ // real result locked into the simulation
+      if(m.played){ // finished: show result + model report card
         const[hg,ag]=m.played;
         const nm=`${hg>ag?'<b>'+m.home+'</b>':m.home} v ${ag>hg?'<b>'+m.away+'</b>':m.away}`;
-        return `<div class="mrow" style="opacity:.62;cursor:default">
+        let chips='',det='',line='',clickable='';
+        if(m.verdicts&&m.pre){
+          const L={pure:'P',blend:'B',market:'M',book:'Bk'};
+          chips=Object.keys(L).filter(k=>m.verdicts[k]).map(k=>{
+            const v=m.verdicts[k];
+            return `<span class="verdict ${v.correct?'v-val':'v-avoid'}" title="${SBL[k]}: ${v.correct?'correct pick':'wrong pick'} · Brier ${v.brier.toFixed(3)}">${v.correct?'✓':'✗'}${L[k]}</span>`;
+          }).join(' ');
+          const sets={...m.pre.probs}; if(m.pre.book)sets.book=m.pre.book;
+          det=Object.keys(SBL).filter(k=>sets[k]).map(k=>{
+            const p=sets[k],v=m.verdicts[k];
+            const cell=(i,nmx)=>`<td class="${v.pick===i?(v.correct?'picked':'neg'):''}">${nmx} ${(p[i]*100).toFixed(0)}%</td>`;
+            return `<tr><td class="mlab">${SBL[k]}</td>${cell(0,m.home)}${cell(1,'draw')}${cell(2,m.away)}
+              <td>${v.correct?'<span class="pos">✓</span>':'<span class="neg">✗</span>'} Brier ${v.brier.toFixed(3)}</td></tr>`;
+          }).join('');
+          const best=Object.keys(m.verdicts).sort((a,b)=>m.verdicts[a].brier-m.verdicts[b].brier)[0];
+          line=`Final: <b>${m.home} ${hg}–${ag} ${m.away}</b>. Sharpest pre-match call: <b>${SBL[best]}</b> (Brier ${m.verdicts[best].brier.toFixed(3)}, predictions frozen ${m.pre.as_of}).`;
+          clickable=` data-mx="${m.n}"`;
+        }
+        return `<div class="mrow"${clickable} style="opacity:.78${clickable?'':';cursor:default'}">
           <span class="tm">${t}</span><span class="gtag">${m.group}</span>
           <span class="vs">M${m.n} · ${nm}<span class="venue">${m.venue}</span></span>
           <span style="font-weight:700;letter-spacing:1px">FT ${hg}–${ag}</span>
-          <span></span><span class="mpct">locked into sims</span></div>`;
+          <span>${chips}</span><span class="mpct">${chips?'tap for report card':''}</span></div>`+
+          (det?`<div class="mdetail" id="md${m.n}">
+            <div style="font-size:12.5px;margin-bottom:6px">${line}</div>
+            <table><tr><th class="mlab">projection</th><th>${m.home}</th><th>draw</th><th>${m.away}</th><th>scored</th></tr>${det}</table>
+          </div>`:'');
       }
       const[pw,pd,pl]=m.probs[MODE];
       const rot=(m.rot&&(m.rot[0]||m.rot[1]))?` <span title="Rotation risk: ${m.rot[0]?m.home:''}${m.rot[0]&&m.rot[1]?' & ':''}${m.rot[1]?m.away:''} already locked into top-2 — likely to rest starters (priced in: −60 Elo)">🔄</span>`:'';

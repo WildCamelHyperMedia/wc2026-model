@@ -1,7 +1,7 @@
 {
  "meta": {
   "n_sims": 50000,
-  "generated_at": "2026-06-12 14:21 UTC",
+  "generated_at": "2026-06-12 14:46 UTC",
   "overround_pct": 20.1,
   "freshness": {
    "elo_as_of": "2026-06-12 14:20 UTC",
@@ -2343,7 +2343,55 @@
    "played": [
     2,
     0
-   ]
+   ],
+   "pre": {
+    "probs": {
+     "pure": [
+      0.8748,
+      0.1167,
+      0.0085
+     ],
+     "blend": [
+      0.7737,
+      0.1656,
+      0.0607
+     ],
+     "market": [
+      0.6776,
+      0.2108,
+      0.1116
+     ]
+    },
+    "book": [
+     0.6776,
+     0.2108,
+     0.1116
+    ],
+    "as_of": "2026-06-11 18:48 UTC"
+   },
+   "outcome": 0,
+   "verdicts": {
+    "pure": {
+     "pick": 0,
+     "correct": true,
+     "brier": 0.029
+    },
+    "blend": {
+     "pick": 0,
+     "correct": true,
+     "brier": 0.082
+    },
+    "market": {
+     "pick": 0,
+     "correct": true,
+     "brier": 0.161
+    },
+    "book": {
+     "pick": 0,
+     "correct": true,
+     "brier": 0.161
+    }
+   }
   },
   {
    "n": 2,
@@ -2377,7 +2425,55 @@
    "played": [
     2,
     1
-   ]
+   ],
+   "pre": {
+    "probs": {
+     "pure": [
+      0.3911,
+      0.2697,
+      0.3393
+     ],
+     "blend": [
+      0.3765,
+      0.2913,
+      0.3322
+     ],
+     "market": [
+      0.362,
+      0.3129,
+      0.325
+     ]
+    },
+    "book": [
+     0.362,
+     0.3129,
+     0.325
+    ],
+    "as_of": "2026-06-12 01:58 UTC"
+   },
+   "outcome": 0,
+   "verdicts": {
+    "pure": {
+     "pick": 0,
+     "correct": true,
+     "brier": 0.559
+    },
+    "blend": {
+     "pick": 0,
+     "correct": true,
+     "brier": 0.584
+    },
+    "market": {
+     "pick": 0,
+     "correct": true,
+     "brier": 0.611
+    },
+    "book": {
+     "pick": 0,
+     "correct": true,
+     "brier": 0.611
+    }
+   }
   },
   {
    "n": 3,
@@ -5541,5 +5637,27 @@
    "winner": null,
    "proj": []
   }
- ]
+ ],
+ "scoreboard": {
+  "pure": {
+   "n": 2,
+   "correct": 2,
+   "avg_brier": 0.294
+  },
+  "blend": {
+   "n": 2,
+   "correct": 2,
+   "avg_brier": 0.333
+  },
+  "market": {
+   "n": 2,
+   "correct": 2,
+   "avg_brier": 0.386
+  },
+  "book": {
+   "n": 2,
+   "correct": 2,
+   "avg_brier": 0.386
+  }
+ }
 }
