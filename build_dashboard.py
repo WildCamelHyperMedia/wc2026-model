@@ -94,6 +94,12 @@ HTML = r"""<!DOCTYPE html>
   .stale.on{display:block}
   .stale code{background:#2e2509;padding:1px 6px;border-radius:5px}
   .ptschip{flex:0 0 64px;text-align:right;color:var(--gold);font-size:11px;font-weight:700;white-space:nowrap}
+  .info{display:inline-block;width:16px;height:16px;line-height:16px;text-align:center;border-radius:50%;background:#222d4d;color:#7e8db0;font-size:11px;font-style:normal;cursor:pointer;margin-left:6px;vertical-align:1px;user-select:none}
+  .info:hover{background:var(--blue);color:#fff}
+  #pop{position:fixed;z-index:99;max-width:300px;background:#1a2340;border:1px solid #2e3d66;border-radius:11px;padding:12px 14px;font-size:12.5px;line-height:1.55;color:var(--text);box-shadow:0 10px 30px rgba(0,0,0,.5);display:none}
+  #pop b{color:var(--gold)}
+  #intro{background:linear-gradient(90deg,#13203c,#121829);border:1px solid #27396a;border-radius:12px;padding:14px 16px;margin:0 0 18px;font-size:13px;line-height:1.6;display:none}
+  #intro button{float:right;background:var(--blue);border:0;color:#fff;border-radius:8px;padding:6px 14px;font:600 12px inherit;cursor:pointer;margin-left:12px}
   .two{display:grid;grid-template-columns:1.7fr 1fr;gap:22px}
   @media(max-width:920px){.two{grid-template-columns:1fr}}
   .meth{font-size:12.5px;color:var(--muted);line-height:1.7}
@@ -109,34 +115,41 @@ HTML = r"""<!DOCTYPE html>
   <div class="sub">Elo + market-implied adjustments · 50,000-run Monte Carlo of the full 48-team bracket</div>
   <div class="chips" id="chips"></div>
 
+  <div id="intro">
+    <button id="introClose">Got it</button>
+    👋 <b>New here?</b> This site simulates the entire World Cup 50,000 times and compares its probabilities with real bookmaker prices.
+    Start on the <b>Blended ★</b> tab (our best estimate), scroll to the <b>Daily match board</b> for today's games,
+    and tap any <span class="info">ⓘ</span> for a plain-English explanation. Probabilities, not promises — never bet what you can't lose.
+  </div>
+
   <div class="seg" id="modeSeg">
     <button data-m="pure">Pure Elo</button>
     <button data-m="blend" class="active">Blended ★</button>
     <button data-m="market">Market-anchored</button>
   </div>
-  <div class="modedesc" id="modeDesc"></div>
+  <div class="modedesc"><i class="info" data-t="modes">ⓘ</i> <span id="modeDesc"></span></div>
 
   <div class="stale" id="staleBanner"></div>
 
   <div class="grid-kpi" id="kpis"></div>
 
   <div class="panel" id="sbPanel" style="display:none">
-    <h2>🎯 Model scoreboard — who's been right so far</h2>
+    <h2>🎯 Model scoreboard — who's been right so far<i class="info" data-t="scoreboard">ⓘ</i></h2>
     <div id="sbBody"></div>
     <div class="note">Scored on probabilities <b>frozen before kickoff</b> (prediction ledger — no hindsight). Brier score = squared error across win/draw/loss; lower is better; 0.667 = chance-level for an even three-way. Click any finished match below for its per-model report card.</div>
   </div>
 
   <div class="panel">
-    <h2>Title probability — <span id="chartModeLab"></span> vs. market</h2>
+    <h2>Title probability — <span id="chartModeLab"></span> vs. market<i class="info" data-t="chart">ⓘ</i></h2>
     <canvas id="titleChart"></canvas>
     <div class="note">Market = BetMGM outrights de-vigged (power method). In market-anchored mode the bars converge by construction — that's the calibration working.</div>
   </div>
 
   <div class="two">
     <div class="panel">
-      <h2>Value board — outright winner market</h2>
+      <h2>Value board — outright winner market<i class="info" data-t="valueboard">ⓘ</i></h2>
       <table id="valueTable">
-        <thead><tr><th>Team</th><th>Odds</th><th>Pure</th><th>Blend</th><th>Market</th><th>EV pure</th><th>EV blend</th><th>¼ Kelly</th><th>Call</th></tr></thead>
+        <thead><tr><th>Team</th><th>Odds</th><th>Pure</th><th>Blend</th><th>Market<i class="info" data-t="mktimplied">ⓘ</i></th><th>EV pure<i class="info" data-t="ev">ⓘ</i></th><th>EV blend</th><th>¼ Kelly<i class="info" data-t="kelly">ⓘ</i></th><th>Call</th></tr></thead>
         <tbody></tbody>
       </table>
       <div class="note">Verdict uses <b>blended</b> EV — a bet should survive the market adjustment, not just raw Elo. ¼ Kelly = stake as % of bankroll. Teams with blended title prob ≥ 0.3% shown.</div>
@@ -156,7 +169,7 @@ HTML = r"""<!DOCTYPE html>
   </div>
 
   <div class="panel">
-    <h2>📅 Daily match board — group stage 1X2 <span style="font-weight:400;color:var(--muted);font-size:12px">(times local · follows selected mode)</span></h2>
+    <h2>📅 Daily match board — group stage 1X2<i class="info" data-t="matchboard">ⓘ</i> <span style="font-weight:400;color:var(--muted);font-size:12px">(times local · follows selected mode)</span></h2>
     <div class="selwrap">
       <select id="grpFilter"><option value="">All groups</option></select>
     </div>
@@ -165,20 +178,20 @@ HTML = r"""<!DOCTYPE html>
   </div>
 
   <div class="panel">
-    <h2>🗓️ Knockout schedule — projected Round-of-32 matchups <span style="font-weight:400;color:var(--muted);font-size:12px">(projections from blended sims; pairings firm up as groups finish)</span></h2>
+    <h2>🗓️ Knockout schedule — projected Round-of-32 matchups<i class="info" data-t="ko">ⓘ</i> <span style="font-weight:400;color:var(--muted);font-size:12px">(projections from blended sims; pairings firm up as groups finish)</span></h2>
     <div id="koBoard"></div>
   </div>
 
   <div class="panel">
-    <h2>Full projections — all 48 teams <span style="font-weight:400;color:var(--muted);font-size:12px">(click headers to sort · probabilities follow selected mode)</span></h2>
+    <h2>Full projections — all 48 teams<i class="info" data-t="fulltable">ⓘ</i> <span style="font-weight:400;color:var(--muted);font-size:12px">(click headers to sort · probabilities follow selected mode)</span></h2>
     <div style="overflow-x:auto">
     <table id="mainTable">
       <thead><tr>
-        <th data-k="team">Team</th><th data-k="elo">Elo</th><th data-k="offset">Mkt Adj</th>
+        <th data-k="team">Team</th><th data-k="elo">Elo<i class="info" data-t="elo">ⓘ</i></th><th data-k="offset">Mkt Adj<i class="info" data-t="mktadj">ⓘ</i></th>
         <th data-k="group_win">Win Grp</th><th data-k="r32">R32</th><th data-k="r16">R16</th>
         <th data-k="qf">QF</th><th data-k="sf">SF</th><th data-k="final">Final</th>
         <th data-k="champion">🏆 Win</th><th data-k="odds_decimal">Odds</th>
-        <th data-k="edge">Edge</th><th data-k="ev">EV/$1</th>
+        <th data-k="edge">Edge<i class="info" data-t="edge">ⓘ</i></th><th data-k="ev">EV/$1<i class="info" data-t="ev">ⓘ</i></th>
       </tr></thead>
       <tbody></tbody>
     </table>
@@ -186,7 +199,7 @@ HTML = r"""<!DOCTYPE html>
   </div>
 
   <div class="panel">
-    <h2>Group projections — P(advance to R32)</h2>
+    <h2>Group projections — P(advance to R32)<i class="info" data-t="groups">ⓘ</i></h2>
     <div class="groups" id="groups"></div>
   </div>
 
@@ -200,6 +213,51 @@ const DATA = __DATA__;
 const T = DATA.teams;
 const SBL={pure:'Pure Elo',blend:'Blended ★',market:'Market-anchored',book:'Books consensus'};
 let MODE = 'blend';
+
+// ---------- plain-English explainers ----------
+const TIPS={
+ modes:`<b>The three projections</b><br>Three ways of estimating the same probabilities.<br><br><b>Pure Elo</b> — results history only. Knows nothing about injuries or lineups.<br><b>Market-anchored</b> — matched to bookmaker prices, which include everything bettors know.<br><b>Blended ★</b> — halfway mix. Our recommended best guess.`,
+ scoreboard:`<b>Model scoreboard</b><br>Tracks which projection has been most accurate, scored only on predictions saved <b>before</b> kickoff.<br><br><b>Picks correct</b> = winners called.<br><b>Brier</b> = how well-judged the confidence was. Lower is better: 0 = perfect, ~0.667 = pure guessing.`,
+ chart:`<b>Title chart</b><br><span style="color:var(--blue)">Blue</span> = our model's chance of each team winning the World Cup.<br><span style="color:var(--accent)">Green</span> = what bookmaker prices imply (with their profit margin stripped out).<br><br>Big gap between bars = we disagree with the market — that's where value (or model error) lives.`,
+ valueboard:`<b>Value board</b><br>Hunts for tournament-winner bets where the bookmaker price looks too generous.<br><br><b>VALUE</b> = our probability is higher than the price implies → profitable long-run <i>if</i> the model is right.<br><b>AVOID</b> = the price implies more chance than we see.<br><br>Verdicts use the cautious Blended numbers.`,
+ matchboard:`<b>Daily match board</b><br>All 72 group games, day by day, in your local time.<br><br><b>Chip</b> = who the models pick and how strongly they agree (green = all three).<br><b>Bar</b> = win / draw / loss chances.<br><b>Fair</b> = break-even odds — only bet a side if your book offers <i>longer</i>.<br><br>Click any match for the full breakdown, including real bookmaker prices.`,
+ ko:`<b>Knockout schedule</b><br>Every knockout slot with date and venue. Until the groups finish, we show the most likely matchups from 50,000 simulations (with their % chance). Confirmed pairings turn gold; winners get a ✓.`,
+ fulltable:`<b>Full projections</b><br>Each team's chance of reaching every stage — winning the group, round of 32, 16, quarters, semis, final, title — under the projection selected above. Click a column header to sort.`,
+ groups:`<b>Group projections</b><br>Chance of advancing to the round of 32: top two in each group go through, plus the 8 best third-placed teams. Once real results land, the live points table appears and teams re-sort by actual standing.`,
+ elo:`<b>Elo rating</b><br>Team strength from results alone: win = gain points, lose = drop them; beating strong teams pays more. The gap between two ratings converts to a win probability (+100 ≈ 64%, +200 ≈ 76%).<br><br>~1450 = minnow · ~2150 = world's best.`,
+ mktadj:`<b>Market adjustment</b><br>What bookmaker prices say Elo is missing — injuries, squad quality, form — in rating points. +60 = market rates the team ~60 points stronger than results history alone. "—" = odds too long to carry real signal.`,
+ edge:`<b>Edge</b><br>Our probability minus the market's. Positive = we think it's more likely than the price implies. The raw disagreement behind every value call.`,
+ ev:`<b>EV per $1</b><br>Expected profit on a $1 bet at current odds, if our probability is correct. +$0.40 = forty cents of expected profit per dollar, over many repeats. Negative = long-run loser.`,
+ kelly:`<b>¼ Kelly</b><br>Suggested stake as a % of your bankroll, at one quarter of the mathematically optimal (Kelly) size — the standard discipline for uncertain models. Bigger edge and shorter odds → bigger stake.`,
+ mktimplied:`<b>Market %</b><br>Bookmaker odds converted to probabilities with the bookmaker's built-in profit margin (the "vig") removed — the market's honest opinion.`,
+};
+// popover
+const pop=document.createElement('div');pop.id='pop';document.body.appendChild(pop);
+document.addEventListener('click',e=>{
+  const ic=e.target.closest('.info');
+  if(ic&&ic.dataset.t&&TIPS[ic.dataset.t]){
+    e.stopPropagation();
+    const r=ic.getBoundingClientRect();
+    pop.innerHTML=TIPS[ic.dataset.t];
+    pop.style.display='block';
+    const x=Math.max(12,Math.min(r.left-20,window.innerWidth-316));
+    pop.style.left=x+'px';
+    pop.style.top=Math.min(r.bottom+8,window.innerHeight-180)+'px';
+  }else if(!e.target.closest('#pop')){
+    pop.style.display='none';
+  }
+},true);
+// first-visit intro
+try{
+  if(!localStorage.getItem('wc_intro_done')){
+    document.getElementById('intro').style.display='block';
+  }
+  document.getElementById('introClose').onclick=()=>{
+    document.getElementById('intro').style.display='none';
+    try{localStorage.setItem('wc_intro_done','1');}catch(e){}
+  };
+}catch(e){document.getElementById('intro').style.display='block';
+  document.getElementById('introClose').onclick=()=>document.getElementById('intro').style.display='none';}
 
 // model scoreboard
 (function(){
