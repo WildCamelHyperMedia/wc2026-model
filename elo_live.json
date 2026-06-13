@@ -1,5 +1,5 @@
 {
- "as_of": "2026-06-13 22:04 UTC",
+ "as_of": "2026-06-13 23:40 UTC",
  "elo": {
   "Spain": 2157,
   "Argentina": 2115,
@@ -17,8 +17,8 @@
   "Japan": 1906,
   "Belgium": 1894,
   "Uruguay": 1892,
-  "Switzerland": 1891,
   "Mexico": 1881,
+  "Switzerland": 1865,
   "Senegal": 1860,
   "Austria": 1830,
   "Morocco": 1827,
@@ -47,7 +47,7 @@
   "Haiti": 1548,
   "South Africa": 1511,
   "Ghana": 1510,
-  "Curacao": 1434,
-  "Qatar": 1421
+  "Qatar": 1447,
+  "Curacao": 1434
  }
 }
