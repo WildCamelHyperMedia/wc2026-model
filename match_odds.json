@@ -1,15 +1,15 @@
 {
- "as_of": "2026-06-14 19:47 UTC",
+ "as_of": "2026-06-14 21:13 UTC",
  "source": "The Odds API consensus",
- "quota_left": 472.0,
+ "quota_left": 471.0,
  "events": {
   "Netherlands|Japan": {
    "probs": [
-    0.4695,
-    0.2754,
-    0.2551
+    0.7253,
+    0.2059,
+    0.0688
    ],
-   "n_books": 9,
+   "n_books": 6,
    "commence": "2026-06-14T20:00:00Z"
   },
   "Ivory Coast|Ecuador": {
@@ -23,26 +23,26 @@
   },
   "Sweden|Tunisia": {
    "probs": [
-    0.4955,
-    0.2833,
-    0.2212
+    0.4985,
+    0.2824,
+    0.219
    ],
    "n_books": 9,
    "commence": "2026-06-15T02:00:00Z"
   },
   "Spain|Cape Verde": {
    "probs": [
-    0.8804,
-    0.0823,
-    0.0372
+    0.8812,
+    0.0815,
+    0.0373
    ],
    "n_books": 9,
    "commence": "2026-06-15T16:00:00Z"
   },
   "Belgium|Egypt": {
    "probs": [
-    0.5894,
-    0.241,
+    0.5895,
+    0.2409,
     0.1696
    ],
    "n_books": 9,
@@ -59,9 +59,9 @@
   },
   "Iran|New Zealand": {
    "probs": [
-    0.5046,
-    0.2789,
-    0.2166
+    0.4989,
+    0.2839,
+    0.2172
    ],
    "n_books": 9,
    "commence": "2026-06-16T01:00:00Z"
@@ -185,9 +185,9 @@
   },
   "Scotland|Morocco": {
    "probs": [
-    0.1907,
-    0.2634,
-    0.546
+    0.1901,
+    0.2638,
+    0.5462
    ],
    "n_books": 9,
    "commence": "2026-06-19T22:00:00Z"
@@ -203,47 +203,47 @@
   },
   "Turkey|Paraguay": {
    "probs": [
-    0.4759,
+    0.4746,
     0.2862,
-    0.2379
+    0.2391
    ],
    "n_books": 9,
    "commence": "2026-06-20T03:00:00Z"
   },
   "Netherlands|Sweden": {
    "probs": [
-    0.582,
-    0.2351,
-    0.183
+    0.5811,
+    0.2347,
+    0.1842
    ],
-   "n_books": 9,
+   "n_books": 8,
    "commence": "2026-06-20T17:00:00Z"
   },
   "Germany|Ivory Coast": {
    "probs": [
-    0.6125,
-    0.2179,
-    0.1695
+    0.6133,
+    0.2182,
+    0.1686
    ],
    "n_books": 9,
    "commence": "2026-06-20T20:00:00Z"
   },
   "Ecuador|Curacao": {
    "probs": [
-    0.8335,
-    0.1138,
-    0.0526
+    0.83,
+    0.1174,
+    0.0527
    ],
    "n_books": 9,
    "commence": "2026-06-21T00:00:00Z"
   },
   "Tunisia|Japan": {
    "probs": [
-    0.1741,
-    0.2641,
-    0.5618
+    0.1684,
+    0.2653,
+    0.5663
    ],
-   "n_books": 9,
+   "n_books": 8,
    "commence": "2026-06-21T04:00:00Z"
   },
   "Spain|Saudi Arabia": {
@@ -356,9 +356,9 @@
   },
   "Bosnia-Herzegovina|Qatar": {
    "probs": [
-    0.6085,
-    0.2338,
-    0.1577
+    0.6062,
+    0.2357,
+    0.1581
    ],
    "n_books": 8,
    "commence": "2026-06-24T19:00:00Z"
@@ -410,7 +410,7 @@
   },
   "Curacao|Ivory Coast": {
    "probs": [
-    0.0648,
+    0.0649,
     0.1253,
     0.8099
    ],
@@ -428,20 +428,20 @@
   },
   "Japan|Sweden": {
    "probs": [
-    0.4517,
-    0.2789,
-    0.2694
+    0.4526,
+    0.2785,
+    0.2689
    ],
-   "n_books": 8,
+   "n_books": 7,
    "commence": "2026-06-25T23:00:00Z"
   },
   "Tunisia|Netherlands": {
    "probs": [
-    0.1473,
-    0.22,
-    0.6327
+    0.1458,
+    0.2204,
+    0.6338
    ],
-   "n_books": 8,
+   "n_books": 7,
    "commence": "2026-06-25T23:00:00Z"
   },
   "Paraguay|Australia": {
