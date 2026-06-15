@@ -1,5 +1,5 @@
 {
- "as_of": "2026-06-14 19:47 UTC",
+ "as_of": "2026-06-15 00:10 UTC",
  "elo": {
   "Spain": 2157,
   "Argentina": 2115,
@@ -8,12 +8,12 @@
   "Portugal": 1989,
   "Colombia": 1982,
   "Brazil": 1978,
-  "Netherlands": 1948,
+  "Netherlands": 1944,
+  "Germany": 1939,
   "Ecuador": 1938,
-  "Germany": 1932,
   "Norway": 1914,
   "Croatia": 1912,
-  "Japan": 1906,
+  "Japan": 1910,
   "Belgium": 1894,
   "Uruguay": 1892,
   "Mexico": 1881,
@@ -48,6 +48,6 @@
   "South Africa": 1511,
   "Ghana": 1510,
   "Qatar": 1447,
-  "Curacao": 1434
+  "Curacao": 1427
  }
 }
