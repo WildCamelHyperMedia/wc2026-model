@@ -1,7 +1,7 @@
 {
  "meta": {
   "n_sims": 50000,
-  "generated_at": "2026-06-20 08:23 UTC",
+  "generated_at": "2026-06-20 10:59 UTC",
   "overround_pct": 18.8,
   "freshness": {
    "elo_as_of": "2026-06-20 08:21 UTC",
@@ -4802,7 +4802,7 @@
   {
    "n": 29,
    "round": 2,
-   "utc": "2026-06-20 01:00:00Z",
+   "utc": "2026-06-20 00:30:00Z",
    "venue": "Philadelphia",
    "group": "C",
    "home": "Brazil",
@@ -4885,7 +4885,7 @@
   {
    "n": 31,
    "round": 2,
-   "utc": "2026-06-20 04:00:00Z",
+   "utc": "2026-06-20 03:00:00Z",
    "venue": "San Francisco Bay Area",
    "group": "D",
    "home": "Turkey",
