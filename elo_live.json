@@ -1,5 +1,5 @@
 {
- "as_of": "2026-06-21 22:15 UTC",
+ "as_of": "2026-06-22 04:20 UTC",
  "elo": {
   "Spain": 2134,
   "Argentina": 2128,
@@ -15,11 +15,11 @@
   "Mexico": 1896,
   "Switzerland": 1885,
   "Croatia": 1881,
-  "Uruguay": 1870,
   "Belgium": 1869,
   "Morocco": 1866,
   "Ecuador": 1864,
   "Austria": 1857,
+  "Uruguay": 1851,
   "Senegal": 1839,
   "United States": 1820,
   "Paraguay": 1816,
@@ -38,7 +38,7 @@
   "Panama": 1683,
   "DR Congo": 1674,
   "Jordan": 1653,
-  "Cape Verde": 1606,
+  "Cape Verde": 1625,
   "Bosnia-Herzegovina": 1596,
   "Saudi Arabia": 1593,
   "Iraq": 1592,
