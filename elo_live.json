@@ -1,11 +1,11 @@
 {
- "as_of": "2026-06-24 07:41 UTC",
+ "as_of": "2026-06-24 10:51 UTC",
  "elo": {
   "Argentina": 2144,
   "Spain": 2134,
   "France": 2090,
   "England": 2028,
-  "Colombia": 1998,
+  "Colombia": 2006,
   "Portugal": 1988,
   "Brazil": 1986,
   "Netherlands": 1972,
@@ -35,8 +35,8 @@
   "Sweden": 1727,
   "Czechia": 1696,
   "Uzbekistan": 1677,
-  "DR Congo": 1674,
   "Panama": 1668,
+  "DR Congo": 1666,
   "Jordan": 1632,
   "Cape Verde": 1625,
   "Bosnia-Herzegovina": 1596,
