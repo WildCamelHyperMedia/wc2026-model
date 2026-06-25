@@ -1,7 +1,7 @@
 {
  "meta": {
   "n_sims": 50000,
-  "generated_at": "2026-06-25 11:17 UTC",
+  "generated_at": "2026-06-25 13:38 UTC",
   "overround_pct": 20.3,
   "freshness": {
    "elo_as_of": "2026-06-25 11:15 UTC",
