@@ -639,69 +639,69 @@
  },
  "Norway|France": {
   "probs": [
-   0.1755,
-   0.1929,
-   0.6317
+   0.127,
+   0.1647,
+   0.7083
   ],
   "n_books": 9,
-  "captured_at": "2026-06-26 16:32 UTC",
+  "captured_at": "2026-06-26 18:52 UTC",
   "kickoff": "2026-06-26T19:00:00Z",
-  "mins_before_ko": 148
+  "mins_before_ko": 8
  },
  "Senegal|Iraq": {
   "probs": [
-   0.779,
-   0.1428,
-   0.0781
+   0.7846,
+   0.1365,
+   0.0789
   ],
   "n_books": 9,
-  "captured_at": "2026-06-26 16:32 UTC",
+  "captured_at": "2026-06-26 18:52 UTC",
   "kickoff": "2026-06-26T19:00:00Z",
-  "mins_before_ko": 148
+  "mins_before_ko": 8
  },
  "Cape Verde|Saudi Arabia": {
   "probs": [
-   0.3572,
-   0.2883,
-   0.3545
+   0.361,
+   0.2911,
+   0.3479
   ],
   "n_books": 9,
-  "captured_at": "2026-06-26 16:32 UTC",
+  "captured_at": "2026-06-26 18:52 UTC",
   "kickoff": "2026-06-27T00:00:00Z",
-  "mins_before_ko": 448
+  "mins_before_ko": 308
  },
  "Uruguay|Spain": {
   "probs": [
-   0.1588,
-   0.2722,
-   0.569
+   0.1578,
+   0.2703,
+   0.5719
   ],
   "n_books": 9,
-  "captured_at": "2026-06-26 16:32 UTC",
+  "captured_at": "2026-06-26 18:52 UTC",
   "kickoff": "2026-06-27T00:00:00Z",
-  "mins_before_ko": 448
+  "mins_before_ko": 308
  },
  "New Zealand|Belgium": {
   "probs": [
-   0.0677,
-   0.1235,
-   0.8088
+   0.0738,
+   0.1264,
+   0.7997
   ],
   "n_books": 9,
-  "captured_at": "2026-06-26 16:32 UTC",
+  "captured_at": "2026-06-26 18:52 UTC",
   "kickoff": "2026-06-27T03:00:00Z",
-  "mins_before_ko": 628
+  "mins_before_ko": 488
  },
  "Egypt|Iran": {
   "probs": [
-   0.3891,
+   0.3916,
    0.3645,
-   0.2464
+   0.2439
   ],
   "n_books": 9,
-  "captured_at": "2026-06-26 16:32 UTC",
+  "captured_at": "2026-06-26 18:52 UTC",
   "kickoff": "2026-06-27T03:00:00Z",
-  "mins_before_ko": 628
+  "mins_before_ko": 488
  },
  "Croatia|Ghana": {
   "probs": [
@@ -710,31 +710,31 @@
    0.1614
   ],
   "n_books": 9,
-  "captured_at": "2026-06-26 16:32 UTC",
+  "captured_at": "2026-06-26 18:52 UTC",
   "kickoff": "2026-06-27T21:00:00Z",
-  "mins_before_ko": 1708
+  "mins_before_ko": 1568
  },
  "Panama|England": {
   "probs": [
-   0.0571,
-   0.1176,
-   0.8253
+   0.0572,
+   0.1151,
+   0.8277
   ],
   "n_books": 9,
-  "captured_at": "2026-06-26 16:32 UTC",
+  "captured_at": "2026-06-26 18:52 UTC",
   "kickoff": "2026-06-27T21:00:00Z",
-  "mins_before_ko": 1708
+  "mins_before_ko": 1568
  },
  "Colombia|Portugal": {
   "probs": [
-   0.2331,
-   0.2557,
-   0.5112
+   0.233,
+   0.256,
+   0.5109
   ],
   "n_books": 9,
-  "captured_at": "2026-06-26 16:32 UTC",
+  "captured_at": "2026-06-26 18:52 UTC",
   "kickoff": "2026-06-27T23:30:00Z",
-  "mins_before_ko": 1858
+  "mins_before_ko": 1718
  },
  "DR Congo|Uzbekistan": {
   "probs": [
@@ -743,74 +743,74 @@
    0.2175
   ],
   "n_books": 9,
-  "captured_at": "2026-06-26 16:32 UTC",
+  "captured_at": "2026-06-26 18:52 UTC",
   "kickoff": "2026-06-27T23:30:00Z",
-  "mins_before_ko": 1858
+  "mins_before_ko": 1718
  },
  "Algeria|Austria": {
   "probs": [
-   0.238,
-   0.4327,
+   0.2366,
+   0.4341,
    0.3293
   ],
   "n_books": 9,
-  "captured_at": "2026-06-26 16:32 UTC",
+  "captured_at": "2026-06-26 18:52 UTC",
   "kickoff": "2026-06-28T02:00:00Z",
-  "mins_before_ko": 2008
+  "mins_before_ko": 1868
  },
  "Jordan|Argentina": {
   "probs": [
    0.0646,
-   0.1219,
-   0.8136
+   0.1257,
+   0.8097
   ],
   "n_books": 9,
-  "captured_at": "2026-06-26 16:32 UTC",
+  "captured_at": "2026-06-26 18:52 UTC",
   "kickoff": "2026-06-28T02:00:00Z",
-  "mins_before_ko": 2008
+  "mins_before_ko": 1868
  },
  "South Africa|Canada": {
   "probs": [
-   0.1773,
-   0.2623,
-   0.5604
+   0.177,
+   0.2634,
+   0.5596
   ],
   "n_books": 8,
-  "captured_at": "2026-06-26 16:32 UTC",
+  "captured_at": "2026-06-26 18:52 UTC",
   "kickoff": "2026-06-28T19:00:00Z",
-  "mins_before_ko": 3028
+  "mins_before_ko": 2888
  },
  "United States|Bosnia-Herzegovina": {
   "probs": [
-   0.6734,
-   0.2057,
-   0.1209
+   0.6779,
+   0.2034,
+   0.1187
   ],
   "n_books": 8,
-  "captured_at": "2026-06-26 16:32 UTC",
+  "captured_at": "2026-06-26 18:52 UTC",
   "kickoff": "2026-07-02T00:00:00Z",
-  "mins_before_ko": 7648
+  "mins_before_ko": 7508
  },
  "Brazil|Japan": {
   "probs": [
-   0.5539,
-   0.2564,
-   0.1898
+   0.5551,
+   0.2572,
+   0.1876
   ],
   "n_books": 8,
-  "captured_at": "2026-06-26 16:32 UTC",
+  "captured_at": "2026-06-26 18:52 UTC",
   "kickoff": "2026-06-29T17:00:00Z",
-  "mins_before_ko": 4348
+  "mins_before_ko": 4208
  },
  "Netherlands|Morocco": {
   "probs": [
-   0.4455,
-   0.2901,
-   0.2643
+   0.4458,
+   0.2917,
+   0.2625
   ],
   "n_books": 8,
-  "captured_at": "2026-06-26 16:32 UTC",
+  "captured_at": "2026-06-26 18:52 UTC",
   "kickoff": "2026-06-30T01:00:00Z",
-  "mins_before_ko": 4828
+  "mins_before_ko": 4688
  }
 }
