@@ -1,49 +1,40 @@
 {
- "as_of": "2026-06-29 18:29 UTC",
+ "as_of": "2026-06-29 20:28 UTC",
  "source": "The Odds API consensus",
- "quota_left": 334.0,
+ "quota_left": 333.0,
  "events": {
-  "Brazil|Japan": {
-   "probs": [
-    0.4161,
-    0.4671,
-    0.1168
-   ],
-   "n_books": 6,
-   "commence": "2026-06-29T17:00:00Z"
-  },
   "Germany|Paraguay": {
    "probs": [
-    0.7079,
-    0.1902,
-    0.1019
+    0.7212,
+    0.184,
+    0.0949
    ],
    "n_books": 8,
    "commence": "2026-06-29T20:30:00Z"
   },
   "Netherlands|Morocco": {
    "probs": [
-    0.4135,
-    0.3083,
-    0.2783
+    0.4053,
+    0.3111,
+    0.2837
    ],
    "n_books": 8,
    "commence": "2026-06-30T01:00:00Z"
   },
   "Ivory Coast|Norway": {
    "probs": [
-    0.2743,
-    0.276,
-    0.4497
+    0.2717,
+    0.2754,
+    0.4528
    ],
    "n_books": 8,
    "commence": "2026-06-30T17:00:00Z"
   },
   "France|Sweden": {
    "probs": [
-    0.7509,
-    0.1581,
-    0.091
+    0.752,
+    0.158,
+    0.09
    ],
    "n_books": 8,
    "commence": "2026-06-30T21:00:00Z"
@@ -59,63 +50,63 @@
   },
   "England|DR Congo": {
    "probs": [
-    0.748,
-    0.1745,
-    0.0775
+    0.7471,
+    0.1756,
+    0.0773
    ],
    "n_books": 8,
    "commence": "2026-07-01T16:00:00Z"
   },
   "Belgium|Senegal": {
    "probs": [
-    0.4337,
-    0.2937,
-    0.2726
+    0.4332,
+    0.2957,
+    0.2711
    ],
    "n_books": 8,
    "commence": "2026-07-01T20:00:00Z"
   },
   "United States|Bosnia-Herzegovina": {
    "probs": [
-    0.6989,
-    0.1947,
-    0.1064
+    0.6999,
+    0.1936,
+    0.1065
    ],
    "n_books": 8,
    "commence": "2026-07-02T00:00:00Z"
   },
   "Spain|Austria": {
    "probs": [
-    0.7318,
-    0.1819,
-    0.0863
+    0.7325,
+    0.1814,
+    0.0861
    ],
    "n_books": 8,
    "commence": "2026-07-02T19:00:00Z"
   },
   "Portugal|Croatia": {
    "probs": [
-    0.5378,
-    0.2661,
-    0.1961
+    0.5411,
+    0.2665,
+    0.1924
    ],
    "n_books": 8,
    "commence": "2026-07-02T23:00:00Z"
   },
   "Switzerland|Algeria": {
    "probs": [
-    0.4742,
-    0.2895,
-    0.2363
+    0.4698,
+    0.2901,
+    0.2401
    ],
    "n_books": 8,
    "commence": "2026-07-03T03:00:00Z"
   },
   "Australia|Egypt": {
    "probs": [
-    0.2889,
-    0.3279,
-    0.3832
+    0.2893,
+    0.3244,
+    0.3863
    ],
    "n_books": 8,
    "commence": "2026-07-03T18:00:00Z"
@@ -131,9 +122,9 @@
   },
   "Colombia|Ghana": {
    "probs": [
-    0.6255,
-    0.2392,
-    0.1353
+    0.6258,
+    0.2381,
+    0.1361
    ],
    "n_books": 8,
    "commence": "2026-07-04T01:30:00Z"
