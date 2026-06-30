@@ -1,94 +1,94 @@
 {
- "as_of": "2026-06-30 08:30 UTC",
+ "as_of": "2026-06-30 16:36 UTC",
  "source": "The Odds API consensus",
- "quota_left": 326.0,
+ "quota_left": 319.0,
  "events": {
   "Ivory Coast|Norway": {
    "probs": [
-    0.2743,
-    0.2766,
-    0.4491
+    0.2694,
+    0.2871,
+    0.4435
    ],
    "n_books": 8,
    "commence": "2026-06-30T17:00:00Z"
   },
   "France|Sweden": {
    "probs": [
-    0.7383,
-    0.1608,
-    0.1009
+    0.7467,
+    0.1599,
+    0.0933
    ],
    "n_books": 8,
    "commence": "2026-06-30T21:00:00Z"
   },
   "Mexico|Ecuador": {
    "probs": [
-    0.4256,
-    0.3304,
-    0.244
+    0.4222,
+    0.335,
+    0.2428
    ],
    "n_books": 8,
    "commence": "2026-07-01T01:00:00Z"
   },
   "England|DR Congo": {
    "probs": [
-    0.7503,
-    0.175,
-    0.0748
+    0.7443,
+    0.1817,
+    0.074
    ],
    "n_books": 8,
    "commence": "2026-07-01T16:00:00Z"
   },
   "Belgium|Senegal": {
    "probs": [
-    0.4313,
-    0.2959,
-    0.2727
+    0.4311,
+    0.296,
+    0.2728
    ],
    "n_books": 8,
    "commence": "2026-07-01T20:00:00Z"
   },
   "United States|Bosnia-Herzegovina": {
    "probs": [
-    0.6999,
-    0.1936,
-    0.1065
+    0.6966,
+    0.1974,
+    0.106
    ],
    "n_books": 8,
    "commence": "2026-07-02T00:00:00Z"
   },
   "Spain|Austria": {
    "probs": [
-    0.7221,
-    0.1828,
-    0.095
+    0.7229,
+    0.1827,
+    0.0944
    ],
    "n_books": 8,
    "commence": "2026-07-02T19:00:00Z"
   },
   "Portugal|Croatia": {
    "probs": [
-    0.5406,
-    0.2671,
-    0.1923
+    0.5384,
+    0.27,
+    0.1917
    ],
    "n_books": 8,
    "commence": "2026-07-02T23:00:00Z"
   },
   "Switzerland|Algeria": {
    "probs": [
-    0.4677,
-    0.2911,
-    0.2412
+    0.4638,
+    0.2935,
+    0.2427
    ],
    "n_books": 8,
    "commence": "2026-07-03T03:00:00Z"
   },
   "Australia|Egypt": {
    "probs": [
-    0.2869,
-    0.3308,
-    0.3822
+    0.2849,
+    0.3325,
+    0.3826
    ],
    "n_books": 8,
    "commence": "2026-07-03T18:00:00Z"
@@ -113,11 +113,11 @@
   },
   "Canada|Morocco": {
    "probs": [
-    0.2011,
-    0.2657,
-    0.5333
+    0.1913,
+    0.2701,
+    0.5386
    ],
-   "n_books": 7,
+   "n_books": 8,
    "commence": "2026-07-04T17:00:00Z"
   }
  }
