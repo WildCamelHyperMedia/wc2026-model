@@ -1,5 +1,5 @@
 {
- "as_of": "2026-07-02 00:08 UTC",
+ "as_of": "2026-07-02 04:40 UTC",
  "elo": {
   "Argentina": 2148,
   "Spain": 2144,
@@ -24,8 +24,8 @@
   "Paraguay": 1823,
   "Senegal": 1816,
   "Australia": 1800,
+  "United States": 1798,
   "Algeria": 1785,
-  "United States": 1781,
   "Iran": 1764,
   "Canada": 1764,
   "Scotland": 1745,
@@ -38,8 +38,8 @@
   "Panama": 1658,
   "Uzbekistan": 1631,
   "Jordan": 1628,
-  "Bosnia-Herzegovina": 1622,
   "Cape Verde": 1622,
+  "Bosnia-Herzegovina": 1605,
   "Saudi Arabia": 1596,
   "Ghana": 1575,
   "Tunisia": 1562,
