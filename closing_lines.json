@@ -848,25 +848,25 @@
  },
  "Australia|Egypt": {
   "probs": [
-   0.2847,
-   0.332,
+   0.2838,
+   0.3328,
    0.3834
   ],
   "n_books": 8,
-  "captured_at": "2026-07-01 22:46 UTC",
+  "captured_at": "2026-07-02 08:11 UTC",
   "kickoff": "2026-07-03T18:00:00Z",
-  "mins_before_ko": 2593
+  "mins_before_ko": 2028
  },
  "Argentina|Cape Verde": {
   "probs": [
-   0.8271,
-   0.1219,
-   0.051
+   0.8239,
+   0.1243,
+   0.0518
   ],
   "n_books": 8,
-  "captured_at": "2026-07-01 22:46 UTC",
+  "captured_at": "2026-07-02 08:11 UTC",
   "kickoff": "2026-07-03T22:00:00Z",
-  "mins_before_ko": 2833
+  "mins_before_ko": 2268
  },
  "Mexico|Ecuador": {
   "probs": [
@@ -903,90 +903,101 @@
  },
  "Spain|Austria": {
   "probs": [
-   0.722,
-   0.1826,
-   0.0954
+   0.7235,
+   0.1828,
+   0.0936
   ],
   "n_books": 8,
-  "captured_at": "2026-07-01 22:46 UTC",
+  "captured_at": "2026-07-02 08:11 UTC",
   "kickoff": "2026-07-02T19:00:00Z",
-  "mins_before_ko": 1213
+  "mins_before_ko": 648
  },
  "Portugal|Croatia": {
   "probs": [
-   0.5436,
-   0.2644,
-   0.192
+   0.5523,
+   0.2576,
+   0.1901
   ],
   "n_books": 8,
-  "captured_at": "2026-07-01 22:46 UTC",
+  "captured_at": "2026-07-02 08:11 UTC",
   "kickoff": "2026-07-02T23:00:00Z",
-  "mins_before_ko": 1453
+  "mins_before_ko": 888
  },
  "Switzerland|Algeria": {
   "probs": [
-   0.4676,
-   0.2947,
-   0.2376
+   0.4739,
+   0.2957,
+   0.2304
   ],
   "n_books": 8,
-  "captured_at": "2026-07-01 22:46 UTC",
+  "captured_at": "2026-07-02 08:11 UTC",
   "kickoff": "2026-07-03T03:00:00Z",
-  "mins_before_ko": 1693
+  "mins_before_ko": 1128
  },
  "Colombia|Ghana": {
   "probs": [
-   0.6269,
-   0.2392,
-   0.1339
+   0.626,
+   0.2404,
+   0.1336
   ],
   "n_books": 8,
-  "captured_at": "2026-07-01 22:46 UTC",
+  "captured_at": "2026-07-02 08:11 UTC",
   "kickoff": "2026-07-04T01:30:00Z",
-  "mins_before_ko": 3043
+  "mins_before_ko": 2478
  },
  "Canada|Morocco": {
   "probs": [
-   0.1958,
-   0.2756,
-   0.5286
+   0.192,
+   0.2746,
+   0.5334
   ],
   "n_books": 8,
-  "captured_at": "2026-07-01 22:46 UTC",
+  "captured_at": "2026-07-02 08:11 UTC",
   "kickoff": "2026-07-04T17:00:00Z",
-  "mins_before_ko": 3973
+  "mins_before_ko": 3408
  },
  "Brazil|Norway": {
   "probs": [
-   0.5038,
-   0.2659,
-   0.2303
+   0.5011,
+   0.2611,
+   0.2378
   ],
   "n_books": 8,
-  "captured_at": "2026-07-01 22:46 UTC",
+  "captured_at": "2026-07-02 08:11 UTC",
   "kickoff": "2026-07-05T20:00:00Z",
-  "mins_before_ko": 5593
+  "mins_before_ko": 5028
  },
  "Paraguay|France": {
   "probs": [
-   0.0559,
-   0.1367,
-   0.8075
+   0.0547,
+   0.1361,
+   0.8092
   ],
   "n_books": 8,
-  "captured_at": "2026-07-01 22:46 UTC",
+  "captured_at": "2026-07-02 08:11 UTC",
   "kickoff": "2026-07-04T21:00:00Z",
-  "mins_before_ko": 4213
+  "mins_before_ko": 3648
  },
  "Mexico|England": {
   "probs": [
-   0.2893,
-   0.3026,
-   0.4082
+   0.3159,
+   0.3044,
+   0.3798
   ],
   "n_books": 8,
-  "captured_at": "2026-07-01 22:46 UTC",
+  "captured_at": "2026-07-02 08:11 UTC",
   "kickoff": "2026-07-06T00:00:00Z",
-  "mins_before_ko": 5833
+  "mins_before_ko": 5268
+ },
+ "United States|Belgium": {
+  "probs": [
+   0.3745,
+   0.2769,
+   0.3486
+  ],
+  "n_books": 7,
+  "captured_at": "2026-07-02 08:11 UTC",
+  "kickoff": "2026-07-07T00:00:00Z",
+  "mins_before_ko": 6708
  }
 }
