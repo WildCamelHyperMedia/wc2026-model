@@ -1,58 +1,40 @@
 {
- "as_of": "2026-07-02 22:06 UTC",
+ "as_of": "2026-07-03 06:47 UTC",
  "source": "The Odds API consensus",
- "quota_left": 457.0,
+ "quota_left": 450.0,
  "events": {
-  "Portugal|Croatia": {
-   "probs": [
-    0.5669,
-    0.2591,
-    0.174
-   ],
-   "n_books": 8,
-   "commence": "2026-07-02T23:00:00Z"
-  },
-  "Switzerland|Algeria": {
-   "probs": [
-    0.4879,
-    0.2928,
-    0.2193
-   ],
-   "n_books": 8,
-   "commence": "2026-07-03T03:00:00Z"
-  },
   "Australia|Egypt": {
    "probs": [
-    0.2839,
-    0.3319,
-    0.3842
+    0.2674,
+    0.3353,
+    0.3973
    ],
    "n_books": 8,
    "commence": "2026-07-03T18:00:00Z"
   },
   "Argentina|Cape Verde": {
    "probs": [
-    0.8306,
-    0.1201,
-    0.0494
+    0.835,
+    0.1177,
+    0.0474
    ],
    "n_books": 8,
    "commence": "2026-07-03T22:00:00Z"
   },
   "Colombia|Ghana": {
    "probs": [
-    0.6603,
-    0.2234,
-    0.1164
+    0.67,
+    0.2179,
+    0.1121
    ],
    "n_books": 8,
    "commence": "2026-07-04T01:30:00Z"
   },
   "Canada|Morocco": {
    "probs": [
-    0.192,
-    0.2753,
-    0.5327
+    0.1889,
+    0.2743,
+    0.5368
    ],
    "n_books": 8,
    "commence": "2026-07-04T17:00:00Z"
@@ -60,17 +42,17 @@
   "Paraguay|France": {
    "probs": [
     0.0547,
-    0.1358,
-    0.8095
+    0.1364,
+    0.8089
    ],
    "n_books": 8,
    "commence": "2026-07-04T21:00:00Z"
   },
   "Brazil|Norway": {
    "probs": [
-    0.5084,
-    0.2611,
-    0.2305
+    0.5097,
+    0.2601,
+    0.2302
    ],
    "n_books": 8,
    "commence": "2026-07-05T20:00:00Z"
@@ -78,17 +60,26 @@
   "Mexico|England": {
    "probs": [
     0.3039,
-    0.3018,
-    0.3943
+    0.3017,
+    0.3944
    ],
    "n_books": 8,
    "commence": "2026-07-06T00:00:00Z"
   },
+  "Portugal|Spain": {
+   "probs": [
+    0.2383,
+    0.2659,
+    0.4957
+   ],
+   "n_books": 8,
+   "commence": "2026-07-06T19:00:00Z"
+  },
   "United States|Belgium": {
    "probs": [
-    0.3627,
+    0.3664,
     0.281,
-    0.3563
+    0.3526
    ],
    "n_books": 8,
    "commence": "2026-07-07T00:00:00Z"
