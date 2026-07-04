@@ -947,68 +947,90 @@
  },
  "Canada|Morocco": {
   "probs": [
-   0.2045,
-   0.2828,
-   0.5127
+   0.1896,
+   0.2802,
+   0.5302
   ],
   "n_books": 8,
-  "captured_at": "2026-07-04 00:04 UTC",
+  "captured_at": "2026-07-04 07:22 UTC",
   "kickoff": "2026-07-04T17:00:00Z",
-  "mins_before_ko": 1015
+  "mins_before_ko": 578
  },
  "Brazil|Norway": {
   "probs": [
-   0.5204,
-   0.2578,
-   0.2218
+   0.5235,
+   0.2556,
+   0.2208
   ],
   "n_books": 8,
-  "captured_at": "2026-07-04 00:04 UTC",
+  "captured_at": "2026-07-04 07:22 UTC",
   "kickoff": "2026-07-05T20:00:00Z",
-  "mins_before_ko": 2635
+  "mins_before_ko": 2198
  },
  "Paraguay|France": {
   "probs": [
-   0.0545,
-   0.1365,
-   0.8089
+   0.0514,
+   0.1357,
+   0.8129
   ],
   "n_books": 8,
-  "captured_at": "2026-07-04 00:04 UTC",
+  "captured_at": "2026-07-04 07:22 UTC",
   "kickoff": "2026-07-04T21:00:00Z",
-  "mins_before_ko": 1255
+  "mins_before_ko": 818
  },
  "Mexico|England": {
   "probs": [
-   0.311,
-   0.2993,
-   0.3897
+   0.309,
+   0.2992,
+   0.3918
   ],
   "n_books": 8,
-  "captured_at": "2026-07-04 00:04 UTC",
+  "captured_at": "2026-07-04 07:22 UTC",
   "kickoff": "2026-07-06T00:00:00Z",
-  "mins_before_ko": 2875
+  "mins_before_ko": 2438
  },
  "United States|Belgium": {
   "probs": [
-   0.3466,
-   0.2812,
-   0.3722
+   0.3487,
+   0.2811,
+   0.3702
   ],
   "n_books": 8,
-  "captured_at": "2026-07-04 00:04 UTC",
+  "captured_at": "2026-07-04 07:22 UTC",
   "kickoff": "2026-07-07T00:00:00Z",
-  "mins_before_ko": 4315
+  "mins_before_ko": 3878
  },
  "Portugal|Spain": {
   "probs": [
-   0.2359,
-   0.2645,
-   0.4996
+   0.2363,
+   0.2629,
+   0.5008
   ],
   "n_books": 8,
-  "captured_at": "2026-07-04 00:04 UTC",
+  "captured_at": "2026-07-04 07:22 UTC",
   "kickoff": "2026-07-06T19:00:00Z",
-  "mins_before_ko": 4015
+  "mins_before_ko": 3578
+ },
+ "Argentina|Egypt": {
+  "probs": [
+   0.7047,
+   0.1954,
+   0.1
+  ],
+  "n_books": 8,
+  "captured_at": "2026-07-04 07:22 UTC",
+  "kickoff": "2026-07-07T16:00:00Z",
+  "mins_before_ko": 4838
+ },
+ "Switzerland|Colombia": {
+  "probs": [
+   0.2796,
+   0.2928,
+   0.4275
+  ],
+  "n_books": 7,
+  "captured_at": "2026-07-04 07:22 UTC",
+  "kickoff": "2026-07-07T20:00:00Z",
+  "mins_before_ko": 5078
  }
 }
