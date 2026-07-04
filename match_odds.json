@@ -1,78 +1,78 @@
 {
- "as_of": "2026-07-04 07:22 UTC",
+ "as_of": "2026-07-04 14:37 UTC",
  "source": "The Odds API consensus",
- "quota_left": 421.0,
+ "quota_left": 412.0,
  "events": {
   "Canada|Morocco": {
    "probs": [
-    0.1896,
-    0.2802,
-    0.5302
+    0.168,
+    0.2764,
+    0.5557
    ],
    "n_books": 8,
    "commence": "2026-07-04T17:00:00Z"
   },
   "Paraguay|France": {
    "probs": [
-    0.0514,
-    0.1357,
-    0.8129
+    0.0523,
+    0.1368,
+    0.8109
    ],
    "n_books": 8,
    "commence": "2026-07-04T21:00:00Z"
   },
   "Brazil|Norway": {
    "probs": [
-    0.5235,
-    0.2556,
-    0.2208
+    0.5236,
+    0.2557,
+    0.2207
    ],
    "n_books": 8,
    "commence": "2026-07-05T20:00:00Z"
   },
   "Mexico|England": {
    "probs": [
-    0.309,
-    0.2992,
-    0.3918
+    0.3106,
+    0.2987,
+    0.3907
    ],
    "n_books": 8,
    "commence": "2026-07-06T00:00:00Z"
   },
   "Portugal|Spain": {
    "probs": [
-    0.2363,
-    0.2629,
-    0.5008
+    0.2362,
+    0.2628,
+    0.5011
    ],
    "n_books": 8,
    "commence": "2026-07-06T19:00:00Z"
   },
   "United States|Belgium": {
    "probs": [
-    0.3487,
-    0.2811,
-    0.3702
+    0.3505,
+    0.282,
+    0.3675
    ],
    "n_books": 8,
    "commence": "2026-07-07T00:00:00Z"
   },
   "Argentina|Egypt": {
    "probs": [
-    0.7047,
-    0.1954,
-    0.1
+    0.703,
+    0.1974,
+    0.0995
    ],
    "n_books": 8,
    "commence": "2026-07-07T16:00:00Z"
   },
   "Switzerland|Colombia": {
    "probs": [
-    0.2796,
-    0.2928,
-    0.4275
+    0.2745,
+    0.2959,
+    0.4296
    ],
-   "n_books": 7,
+   "n_books": 8,
    "commence": "2026-07-07T20:00:00Z"
   }
  }
