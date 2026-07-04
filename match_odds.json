@@ -1,31 +1,31 @@
 {
- "as_of": "2026-07-04 19:14 UTC",
+ "as_of": "2026-07-04 20:29 UTC",
  "source": "The Odds API consensus",
- "quota_left": 404.0,
+ "quota_left": 401.0,
  "events": {
   "Paraguay|France": {
    "probs": [
-    0.0504,
-    0.1382,
-    0.8114
+    0.0633,
+    0.1424,
+    0.7943
    ],
    "n_books": 8,
    "commence": "2026-07-04T21:00:00Z"
   },
   "Brazil|Norway": {
    "probs": [
-    0.5238,
-    0.2572,
-    0.219
+    0.5222,
+    0.2574,
+    0.2205
    ],
    "n_books": 8,
    "commence": "2026-07-05T20:00:00Z"
   },
   "Mexico|England": {
    "probs": [
-    0.3088,
-    0.2994,
-    0.3917
+    0.31,
+    0.2986,
+    0.3913
    ],
    "n_books": 8,
    "commence": "2026-07-06T00:00:00Z"
@@ -50,8 +50,8 @@
   },
   "Argentina|Egypt": {
    "probs": [
-    0.703,
-    0.1979,
+    0.7028,
+    0.198,
     0.0991
    ],
    "n_books": 8,

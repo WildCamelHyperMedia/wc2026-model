@@ -958,36 +958,36 @@
  },
  "Brazil|Norway": {
   "probs": [
-   0.5238,
-   0.2572,
-   0.219
+   0.5222,
+   0.2574,
+   0.2205
   ],
   "n_books": 8,
-  "captured_at": "2026-07-04 19:14 UTC",
+  "captured_at": "2026-07-04 20:29 UTC",
   "kickoff": "2026-07-05T20:00:00Z",
-  "mins_before_ko": 1485
+  "mins_before_ko": 1411
  },
  "Paraguay|France": {
   "probs": [
-   0.0504,
-   0.1382,
-   0.8114
+   0.0633,
+   0.1424,
+   0.7943
   ],
   "n_books": 8,
-  "captured_at": "2026-07-04 19:14 UTC",
+  "captured_at": "2026-07-04 20:29 UTC",
   "kickoff": "2026-07-04T21:00:00Z",
-  "mins_before_ko": 105
+  "mins_before_ko": 31
  },
  "Mexico|England": {
   "probs": [
-   0.3088,
-   0.2994,
-   0.3917
+   0.31,
+   0.2986,
+   0.3913
   ],
   "n_books": 8,
-  "captured_at": "2026-07-04 19:14 UTC",
+  "captured_at": "2026-07-04 20:29 UTC",
   "kickoff": "2026-07-06T00:00:00Z",
-  "mins_before_ko": 1725
+  "mins_before_ko": 1651
  },
  "United States|Belgium": {
   "probs": [
@@ -996,9 +996,9 @@
    0.3669
   ],
   "n_books": 8,
-  "captured_at": "2026-07-04 19:14 UTC",
+  "captured_at": "2026-07-04 20:29 UTC",
   "kickoff": "2026-07-07T00:00:00Z",
-  "mins_before_ko": 3165
+  "mins_before_ko": 3091
  },
  "Portugal|Spain": {
   "probs": [
@@ -1007,20 +1007,20 @@
    0.4995
   ],
   "n_books": 8,
-  "captured_at": "2026-07-04 19:14 UTC",
+  "captured_at": "2026-07-04 20:29 UTC",
   "kickoff": "2026-07-06T19:00:00Z",
-  "mins_before_ko": 2865
+  "mins_before_ko": 2791
  },
  "Argentina|Egypt": {
   "probs": [
-   0.703,
-   0.1979,
+   0.7028,
+   0.198,
    0.0991
   ],
   "n_books": 8,
-  "captured_at": "2026-07-04 19:14 UTC",
+  "captured_at": "2026-07-04 20:29 UTC",
   "kickoff": "2026-07-07T16:00:00Z",
-  "mins_before_ko": 4125
+  "mins_before_ko": 4051
  },
  "Switzerland|Colombia": {
   "probs": [
@@ -1029,8 +1029,8 @@
    0.4253
   ],
   "n_books": 8,
-  "captured_at": "2026-07-04 19:14 UTC",
+  "captured_at": "2026-07-04 20:29 UTC",
   "kickoff": "2026-07-07T20:00:00Z",
-  "mins_before_ko": 4365
+  "mins_before_ko": 4291
  }
 }
