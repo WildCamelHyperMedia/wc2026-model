@@ -958,14 +958,14 @@
  },
  "Brazil|Norway": {
   "probs": [
-   0.5222,
-   0.2574,
-   0.2205
+   0.5373,
+   0.2554,
+   0.2073
   ],
   "n_books": 8,
-  "captured_at": "2026-07-04 20:29 UTC",
+  "captured_at": "2026-07-05 04:39 UTC",
   "kickoff": "2026-07-05T20:00:00Z",
-  "mins_before_ko": 1411
+  "mins_before_ko": 920
  },
  "Paraguay|France": {
   "probs": [
@@ -980,57 +980,68 @@
  },
  "Mexico|England": {
   "probs": [
-   0.31,
-   0.2986,
-   0.3913
+   0.3057,
+   0.2996,
+   0.3946
   ],
   "n_books": 8,
-  "captured_at": "2026-07-04 20:29 UTC",
+  "captured_at": "2026-07-05 04:39 UTC",
   "kickoff": "2026-07-06T00:00:00Z",
-  "mins_before_ko": 1651
+  "mins_before_ko": 1160
  },
  "United States|Belgium": {
   "probs": [
-   0.3509,
-   0.2823,
-   0.3669
+   0.3511,
+   0.2866,
+   0.3623
   ],
   "n_books": 8,
-  "captured_at": "2026-07-04 20:29 UTC",
+  "captured_at": "2026-07-05 04:39 UTC",
   "kickoff": "2026-07-07T00:00:00Z",
-  "mins_before_ko": 3091
+  "mins_before_ko": 2600
  },
  "Portugal|Spain": {
   "probs": [
-   0.2369,
-   0.2636,
-   0.4995
+   0.2367,
+   0.2643,
+   0.499
   ],
   "n_books": 8,
-  "captured_at": "2026-07-04 20:29 UTC",
+  "captured_at": "2026-07-05 04:39 UTC",
   "kickoff": "2026-07-06T19:00:00Z",
-  "mins_before_ko": 2791
+  "mins_before_ko": 2300
  },
  "Argentina|Egypt": {
   "probs": [
-   0.7028,
-   0.198,
-   0.0991
+   0.6895,
+   0.2032,
+   0.1073
   ],
   "n_books": 8,
-  "captured_at": "2026-07-04 20:29 UTC",
+  "captured_at": "2026-07-05 04:39 UTC",
   "kickoff": "2026-07-07T16:00:00Z",
-  "mins_before_ko": 4051
+  "mins_before_ko": 3560
  },
  "Switzerland|Colombia": {
   "probs": [
-   0.2764,
-   0.2983,
-   0.4253
+   0.2672,
+   0.3073,
+   0.4255
   ],
   "n_books": 8,
-  "captured_at": "2026-07-04 20:29 UTC",
+  "captured_at": "2026-07-05 04:39 UTC",
   "kickoff": "2026-07-07T20:00:00Z",
-  "mins_before_ko": 4291
+  "mins_before_ko": 3800
+ },
+ "France|Morocco": {
+  "probs": [
+   0.5981,
+   0.2436,
+   0.1582
+  ],
+  "n_books": 8,
+  "captured_at": "2026-07-05 04:39 UTC",
+  "kickoff": "2026-07-09T20:00:00Z",
+  "mins_before_ko": 6680
  }
 }
