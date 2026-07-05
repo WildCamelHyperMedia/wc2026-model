@@ -958,14 +958,14 @@
  },
  "Brazil|Norway": {
   "probs": [
-   0.5313,
-   0.2564,
-   0.2122
+   0.5403,
+   0.2539,
+   0.2058
   ],
   "n_books": 8,
-  "captured_at": "2026-07-05 11:54 UTC",
+  "captured_at": "2026-07-05 18:03 UTC",
   "kickoff": "2026-07-05T20:00:00Z",
-  "mins_before_ko": 486
+  "mins_before_ko": 117
  },
  "Paraguay|France": {
   "probs": [
@@ -980,68 +980,68 @@
  },
  "Mexico|England": {
   "probs": [
-   0.3066,
-   0.3029,
-   0.3905
+   0.3117,
+   0.3039,
+   0.3844
   ],
   "n_books": 8,
-  "captured_at": "2026-07-05 11:54 UTC",
+  "captured_at": "2026-07-05 18:03 UTC",
   "kickoff": "2026-07-06T00:00:00Z",
-  "mins_before_ko": 726
+  "mins_before_ko": 357
  },
  "United States|Belgium": {
   "probs": [
-   0.3574,
-   0.2839,
-   0.3587
+   0.379,
+   0.2813,
+   0.3397
   ],
   "n_books": 8,
-  "captured_at": "2026-07-05 11:54 UTC",
+  "captured_at": "2026-07-05 18:03 UTC",
   "kickoff": "2026-07-07T00:00:00Z",
-  "mins_before_ko": 2166
+  "mins_before_ko": 1797
  },
  "Portugal|Spain": {
   "probs": [
-   0.2362,
-   0.2628,
-   0.5011
+   0.2433,
+   0.2636,
+   0.4931
   ],
   "n_books": 8,
-  "captured_at": "2026-07-05 11:54 UTC",
+  "captured_at": "2026-07-05 18:03 UTC",
   "kickoff": "2026-07-06T19:00:00Z",
-  "mins_before_ko": 1866
+  "mins_before_ko": 1497
  },
  "Argentina|Egypt": {
   "probs": [
-   0.6908,
-   0.203,
-   0.1061
+   0.6907,
+   0.2028,
+   0.1065
   ],
   "n_books": 8,
-  "captured_at": "2026-07-05 11:54 UTC",
+  "captured_at": "2026-07-05 18:03 UTC",
   "kickoff": "2026-07-07T16:00:00Z",
-  "mins_before_ko": 3126
+  "mins_before_ko": 2757
  },
  "Switzerland|Colombia": {
   "probs": [
-   0.2704,
-   0.3087,
-   0.4209
+   0.2707,
+   0.3071,
+   0.4223
   ],
   "n_books": 8,
-  "captured_at": "2026-07-05 11:54 UTC",
+  "captured_at": "2026-07-05 18:03 UTC",
   "kickoff": "2026-07-07T20:00:00Z",
-  "mins_before_ko": 3366
+  "mins_before_ko": 2997
  },
  "France|Morocco": {
   "probs": [
-   0.599,
-   0.2443,
-   0.1567
+   0.603,
+   0.2446,
+   0.1524
   ],
   "n_books": 8,
-  "captured_at": "2026-07-05 11:54 UTC",
+  "captured_at": "2026-07-05 18:03 UTC",
   "kickoff": "2026-07-09T20:00:00Z",
-  "mins_before_ko": 6246
+  "mins_before_ko": 5877
  }
 }
