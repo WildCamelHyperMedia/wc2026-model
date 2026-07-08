@@ -1035,35 +1035,46 @@
  },
  "France|Morocco": {
   "probs": [
-   0.6075,
-   0.2429,
-   0.1496
+   0.6012,
+   0.2454,
+   0.1534
   ],
   "n_books": 8,
-  "captured_at": "2026-07-07 19:56 UTC",
+  "captured_at": "2026-07-08 03:33 UTC",
   "kickoff": "2026-07-09T20:00:00Z",
-  "mins_before_ko": 2884
+  "mins_before_ko": 2426
  },
  "Norway|England": {
   "probs": [
-   0.2354,
-   0.2589,
-   0.5057
+   0.2303,
+   0.2577,
+   0.512
   ],
   "n_books": 8,
-  "captured_at": "2026-07-07 19:56 UTC",
+  "captured_at": "2026-07-08 03:33 UTC",
   "kickoff": "2026-07-11T21:00:00Z",
-  "mins_before_ko": 5824
+  "mins_before_ko": 5366
  },
  "Spain|Belgium": {
   "probs": [
-   0.5883,
-   0.2399,
-   0.1718
+   0.5879,
+   0.2413,
+   0.1708
   ],
   "n_books": 8,
-  "captured_at": "2026-07-07 19:56 UTC",
+  "captured_at": "2026-07-08 03:33 UTC",
   "kickoff": "2026-07-10T19:00:00Z",
-  "mins_before_ko": 4264
+  "mins_before_ko": 3806
+ },
+ "Argentina|Switzerland": {
+  "probs": [
+   0.5528,
+   0.269,
+   0.1782
+  ],
+  "n_books": 8,
+  "captured_at": "2026-07-08 03:33 UTC",
+  "kickoff": "2026-07-12T01:00:00Z",
+  "mins_before_ko": 5606
  }
 }
