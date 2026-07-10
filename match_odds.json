@@ -1,31 +1,22 @@
 {
- "as_of": "2026-07-09 18:19 UTC",
+ "as_of": "2026-07-10 01:08 UTC",
  "source": "The Odds API consensus",
- "quota_left": 280.0,
+ "quota_left": 271.0,
  "events": {
-  "France|Morocco": {
-   "probs": [
-    0.5976,
-    0.2502,
-    0.1521
-   ],
-   "n_books": 9,
-   "commence": "2026-07-09T20:00:00Z"
-  },
   "Spain|Belgium": {
    "probs": [
-    0.5831,
-    0.244,
-    0.1729
+    0.5828,
+    0.2433,
+    0.1739
    ],
    "n_books": 9,
    "commence": "2026-07-10T19:00:00Z"
   },
   "Norway|England": {
    "probs": [
-    0.2282,
-    0.2581,
-    0.5137
+    0.2273,
+    0.2587,
+    0.514
    ],
    "n_books": 9,
    "commence": "2026-07-11T21:00:00Z"
@@ -33,8 +24,8 @@
   "Argentina|Switzerland": {
    "probs": [
     0.5598,
-    0.2682,
-    0.172
+    0.2684,
+    0.1718
    ],
    "n_books": 9,
    "commence": "2026-07-12T01:00:00Z"
