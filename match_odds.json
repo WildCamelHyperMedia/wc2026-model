@@ -1,13 +1,13 @@
 {
- "as_of": "2026-07-11 19:42 UTC",
+ "as_of": "2026-07-11 20:48 UTC",
  "source": "The Odds API consensus",
- "quota_left": 223.0,
+ "quota_left": 220.0,
  "events": {
   "Norway|England": {
    "probs": [
-    0.2307,
-    0.2449,
-    0.5244
+    0.2227,
+    0.2491,
+    0.5283
    ],
    "n_books": 9,
    "commence": "2026-07-11T21:00:00Z"
