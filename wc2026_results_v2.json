@@ -1,10 +1,10 @@
 {
  "meta": {
   "n_sims": 50000,
-  "generated_at": "2026-07-13 05:00 UTC",
+  "generated_at": "2026-07-13 08:25 UTC",
   "overround_pct": 23.7,
   "freshness": {
-   "elo_as_of": "2026-07-13 04:59 UTC",
+   "elo_as_of": "2026-07-13 08:23 UTC",
    "odds_as_of": "2026-06-29 11:59 UTC",
    "odds_source": "The Odds API consensus (3 books)",
    "results_locked": 72,
