@@ -1,22 +1,22 @@
 {
- "as_of": "2026-07-13 11:38 UTC",
+ "as_of": "2026-07-13 18:55 UTC",
  "source": "The Odds API consensus",
- "quota_left": 171.0,
+ "quota_left": 164.0,
  "events": {
   "France|Spain": {
    "probs": [
-    0.4111,
-    0.2994,
-    0.2895
+    0.4064,
+    0.2998,
+    0.2938
    ],
    "n_books": 9,
    "commence": "2026-07-14T19:00:00Z"
   },
   "England|Argentina": {
    "probs": [
-    0.3653,
+    0.363,
     0.3218,
-    0.3129
+    0.3151
    ],
    "n_books": 9,
    "commence": "2026-07-15T19:00:00Z"
