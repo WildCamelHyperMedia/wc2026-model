@@ -1079,24 +1079,24 @@
  },
  "France|Spain": {
   "probs": [
-   0.3982,
-   0.3014,
-   0.3004
+   0.3872,
+   0.3111,
+   0.3017
   ],
   "n_books": 9,
-  "captured_at": "2026-07-14 10:16 UTC",
+  "captured_at": "2026-07-14 16:45 UTC",
   "kickoff": "2026-07-14T19:00:00Z",
-  "mins_before_ko": 523
+  "mins_before_ko": 135
  },
  "England|Argentina": {
   "probs": [
-   0.3606,
-   0.326,
-   0.3133
+   0.3597,
+   0.3282,
+   0.3121
   ],
   "n_books": 9,
-  "captured_at": "2026-07-14 10:16 UTC",
+  "captured_at": "2026-07-14 16:45 UTC",
   "kickoff": "2026-07-15T19:00:00Z",
-  "mins_before_ko": 1963
+  "mins_before_ko": 1575
  }
 }
