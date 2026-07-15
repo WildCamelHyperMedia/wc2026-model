@@ -1,18 +1,18 @@
 {
  "meta": {
   "n_sims": 50000,
-  "generated_at": "2026-07-14 23:54 UTC",
+  "generated_at": "2026-07-15 02:31 UTC",
   "overround_pct": 23.7,
   "freshness": {
-   "elo_as_of": "2026-07-14 23:53 UTC",
+   "elo_as_of": "2026-07-15 02:30 UTC",
    "odds_as_of": "2026-06-29 11:59 UTC",
    "odds_source": "The Odds API consensus (3 books)",
    "results_locked": 72,
    "manual_adjustments": {},
    "ko_slots_known": 30,
    "ko_winners_known": 29,
-   "book_fixtures": 2,
-   "book_as_of": "2026-07-14 18:03 UTC"
+   "book_fixtures": 1,
+   "book_as_of": "2026-07-15 02:30 UTC"
   },
   "modes": {
    "pure": "Raw Elo (live) \u2014 no injury/news information",
@@ -47,7 +47,7 @@
      "qf": 1.0,
      "sf": 1.0,
      "final": 1.0,
-     "champion": 0.60214
+     "champion": 0.6022
     },
     "market": {
      "group_win": 1.0,
@@ -56,20 +56,20 @@
      "qf": 1.0,
      "sf": 1.0,
      "final": 1.0,
-     "champion": 0.59482
+     "champion": 0.59476
     }
    },
    "edge_pure": 0.5156048828427177,
    "ev_pure": 3.96448,
-   "edge_blend": 0.49718488284271767,
-   "ev_blend": 3.81712,
-   "kelly_blend": 0.5453028571428572
+   "edge_blend": 0.4972448828427176,
+   "ev_blend": 3.8175999999999997,
+   "kelly_blend": 0.5453714285714285
   },
   {
    "team": "Argentina",
    "group": "J",
    "elo": 2177,
-   "offset": -142.4,
+   "offset": -142.8,
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 5.0,
@@ -90,8 +90,8 @@
      "r16": 1.0,
      "qf": 1.0,
      "sf": 1.0,
-     "final": 0.56796,
-     "champion": 0.26226
+     "final": 0.5684,
+     "champion": 0.2623
     },
     "market": {
      "group_win": 1.0,
@@ -99,15 +99,15 @@
      "r16": 1.0,
      "qf": 1.0,
      "sf": 1.0,
-     "final": 0.48114,
-     "champion": 0.24216
+     "final": 0.48242,
+     "champion": 0.24256
     }
    },
    "edge_pure": 0.08386508446977409,
    "ev_pure": 0.29280000000000017,
-   "edge_blend": 0.08756508446977407,
-   "ev_blend": 0.3112999999999999,
-   "kelly_blend": 0.07782499999999998
+   "edge_blend": 0.08760508446977405,
+   "ev_blend": 0.3114999999999999,
+   "kelly_blend": 0.07787499999999997
   },
   {
    "team": "England",
@@ -134,8 +134,8 @@
      "r16": 1.0,
      "qf": 1.0,
      "sf": 1.0,
-     "final": 0.43204,
-     "champion": 0.1356
+     "final": 0.4316,
+     "champion": 0.1355
     },
     "market": {
      "group_win": 1.0,
@@ -143,15 +143,15 @@
      "r16": 1.0,
      "qf": 1.0,
      "sf": 1.0,
-     "final": 0.51886,
-     "champion": 0.16302
+     "final": 0.51758,
+     "champion": 0.16268
     }
    },
    "edge_pure": 0.015924882842717675,
    "ev_pure": -0.03295999999999999,
-   "edge_blend": 0.03064488284271767,
-   "ev_blend": 0.08479999999999999,
-   "kelly_blend": 0.012114285714285713
+   "edge_blend": 0.030544882842717683,
+   "ev_blend": 0.08400000000000007,
+   "kelly_blend": 0.01200000000000001
   },
   {
    "team": "Czechia",
@@ -2157,14 +2157,14 @@
      "Argentina",
      "Spain"
     ],
-    "p": 0.56796
+    "p": 0.5684
    },
    {
     "pair": [
      "England",
      "Spain"
     ],
-    "p": 0.43204
+    "p": 0.4316
    }
   ],
   "market": [
@@ -2173,14 +2173,14 @@
      "England",
      "Spain"
     ],
-    "p": 0.51886
+    "p": 0.51758
    },
    {
     "pair": [
      "Argentina",
      "Spain"
     ],
-    "p": 0.48114
+    "p": 0.48242
    }
   ]
  },
@@ -3692,14 +3692,14 @@
      0.015
     ],
     "blend": [
-     0.7995,
-     0.1655,
-     0.035
+     0.7993,
+     0.1656,
+     0.0351
     ],
     "market": [
-     0.7336,
-     0.1979,
-     0.0685
+     0.7332,
+     0.1981,
+     0.0687
     ]
    },
    "rot": [
@@ -5518,14 +5518,14 @@
      0.0328
     ],
     "blend": [
-     0.7399,
-     0.1952,
-     0.065
+     0.7397,
+     0.1953,
+     0.0651
     ],
     "market": [
-     0.6612,
-     0.225,
-     0.1138
+     0.6608,
+     0.2251,
+     0.1141
     ]
    },
    "rot": [
@@ -8092,13 +8092,13 @@
     ],
     "blend": [
      0.0059,
-     0.1083,
-     0.8858
+     0.1084,
+     0.8857
     ],
     "market": [
-     0.0181,
-     0.1394,
-     0.8425
+     0.0182,
+     0.1395,
+     0.8422
     ]
    },
    "rot": [
