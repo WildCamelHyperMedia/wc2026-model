@@ -1,16 +1,16 @@
 {
  "meta": {
   "n_sims": 50000,
-  "generated_at": "2026-07-15 20:34 UTC",
+  "generated_at": "2026-07-15 22:02 UTC",
   "overround_pct": 23.7,
   "freshness": {
-   "elo_as_of": "2026-07-15 20:33 UTC",
+   "elo_as_of": "2026-07-15 22:01 UTC",
    "odds_as_of": "2026-06-29 11:59 UTC",
    "odds_source": "The Odds API consensus (3 books)",
    "results_locked": 72,
    "manual_adjustments": {},
-   "ko_slots_known": 30,
-   "ko_winners_known": 29,
+   "ko_slots_known": 32,
+   "ko_winners_known": 30,
    "book_fixtures": 1,
    "book_as_of": "2026-07-15 17:47 UTC"
   },
@@ -38,7 +38,7 @@
      "qf": 1.0,
      "sf": 1.0,
      "final": 1.0,
-     "champion": 0.62056
+     "champion": 0.58082
     },
     "blend": {
      "group_win": 1.0,
@@ -47,7 +47,7 @@
      "qf": 1.0,
      "sf": 1.0,
      "final": 1.0,
-     "champion": 0.60138
+     "champion": 0.58082
     },
     "market": {
      "group_win": 1.0,
@@ -56,20 +56,20 @@
      "qf": 1.0,
      "sf": 1.0,
      "final": 1.0,
-     "champion": 0.59396
+     "champion": 0.58082
     }
    },
-   "edge_pure": 0.5156048828427177,
-   "ev_pure": 3.96448,
-   "edge_blend": 0.4964248828427177,
-   "ev_blend": 3.81104,
-   "kelly_blend": 0.5444342857142858
+   "edge_pure": 0.47586488284271766,
+   "ev_pure": 3.64656,
+   "edge_blend": 0.47586488284271766,
+   "ev_blend": 3.64656,
+   "kelly_blend": 0.5209371428571429
   },
   {
    "team": "Argentina",
    "group": "J",
    "elo": 2177,
-   "offset": -140.5,
+   "offset": -200.0,
    "manual": 0.0,
    "calibrated": true,
    "odds_decimal": 5.0,
@@ -81,8 +81,8 @@
      "r16": 1.0,
      "qf": 1.0,
      "sf": 1.0,
-     "final": 0.61536,
-     "champion": 0.25856
+     "final": 1.0,
+     "champion": 0.41918
     },
     "blend": {
      "group_win": 1.0,
@@ -90,8 +90,8 @@
      "r16": 1.0,
      "qf": 1.0,
      "sf": 1.0,
-     "final": 0.56714,
-     "champion": 0.26272
+     "final": 1.0,
+     "champion": 0.41918
     },
     "market": {
      "group_win": 1.0,
@@ -99,59 +99,15 @@
      "r16": 1.0,
      "qf": 1.0,
      "sf": 1.0,
-     "final": 0.47836,
-     "champion": 0.24228
+     "final": 1.0,
+     "champion": 0.41918
     }
    },
-   "edge_pure": 0.08386508446977409,
-   "ev_pure": 0.29280000000000017,
-   "edge_blend": 0.08802508446977408,
-   "ev_blend": 0.3136000000000001,
-   "kelly_blend": 0.07840000000000003
-  },
-  {
-   "team": "England",
-   "group": "L",
-   "elo": 2097,
-   "offset": -200.0,
-   "manual": 0.0,
-   "calibrated": true,
-   "odds_decimal": 8.0,
-   "market_implied": 0.10495511715728233,
-   "modes": {
-    "pure": {
-     "group_win": 1.0,
-     "r32": 1.0,
-     "r16": 1.0,
-     "qf": 1.0,
-     "sf": 1.0,
-     "final": 0.38464,
-     "champion": 0.12088
-    },
-    "blend": {
-     "group_win": 1.0,
-     "r32": 1.0,
-     "r16": 1.0,
-     "qf": 1.0,
-     "sf": 1.0,
-     "final": 0.43286,
-     "champion": 0.1359
-    },
-    "market": {
-     "group_win": 1.0,
-     "r32": 1.0,
-     "r16": 1.0,
-     "qf": 1.0,
-     "sf": 1.0,
-     "final": 0.52164,
-     "champion": 0.16376
-    }
-   },
-   "edge_pure": 0.015924882842717675,
-   "ev_pure": -0.03295999999999999,
-   "edge_blend": 0.030944882842717666,
-   "ev_blend": 0.08719999999999994,
-   "kelly_blend": 0.012457142857142849
+   "edge_pure": 0.24448508446977407,
+   "ev_pure": 1.0958999999999999,
+   "edge_blend": 0.24448508446977407,
+   "ev_blend": 1.0958999999999999,
+   "kelly_blend": 0.27397499999999997
   },
   {
    "team": "Czechia",
@@ -2046,6 +2002,50 @@
    "kelly_blend": 0.0
   },
   {
+   "team": "England",
+   "group": "L",
+   "elo": 2097,
+   "offset": 200.0,
+   "manual": 0.0,
+   "calibrated": true,
+   "odds_decimal": 8.0,
+   "market_implied": 0.10495511715728233,
+   "modes": {
+    "pure": {
+     "group_win": 1.0,
+     "r32": 1.0,
+     "r16": 1.0,
+     "qf": 1.0,
+     "sf": 1.0,
+     "final": 0.0,
+     "champion": 0.0
+    },
+    "blend": {
+     "group_win": 1.0,
+     "r32": 1.0,
+     "r16": 1.0,
+     "qf": 1.0,
+     "sf": 1.0,
+     "final": 0.0,
+     "champion": 0.0
+    },
+    "market": {
+     "group_win": 1.0,
+     "r32": 1.0,
+     "r16": 1.0,
+     "qf": 1.0,
+     "sf": 1.0,
+     "final": 0.0,
+     "champion": 0.0
+    }
+   },
+   "edge_pure": -0.10495511715728233,
+   "ev_pure": -1.0,
+   "edge_blend": -0.10495511715728233,
+   "ev_blend": -1.0,
+   "kelly_blend": 0.0
+  },
+  {
    "team": "Ghana",
    "group": "L",
    "elo": 1570,
@@ -2141,14 +2141,7 @@
      "Argentina",
      "Spain"
     ],
-    "p": 0.61536
-   },
-   {
-    "pair": [
-     "England",
-     "Spain"
-    ],
-    "p": 0.38464
+    "p": 1.0
    }
   ],
   "blend": [
@@ -2157,30 +2150,16 @@
      "Argentina",
      "Spain"
     ],
-    "p": 0.56714
-   },
-   {
-    "pair": [
-     "England",
-     "Spain"
-    ],
-    "p": 0.43286
+    "p": 1.0
    }
   ],
   "market": [
    {
     "pair": [
-     "England",
-     "Spain"
-    ],
-    "p": 0.52164
-   },
-   {
-    "pair": [
      "Argentina",
      "Spain"
     ],
-    "p": 0.47836
+    "p": 1.0
    }
   ]
  },
@@ -3692,14 +3671,14 @@
      0.015
     ],
     "blend": [
-     0.8003,
-     0.1651,
-     0.0347
+     0.7745,
+     0.1788,
+     0.0467
     ],
     "market": [
-     0.7355,
-     0.1971,
-     0.0674
+     0.6701,
+     0.2221,
+     0.1078
     ]
    },
    "rot": [
@@ -3941,14 +3920,14 @@
      0.1126
     ],
     "blend": [
-     0.3867,
-     0.2698,
-     0.3435
+     0.6629,
+     0.2244,
+     0.1126
     ],
     "market": [
-     0.1386,
-     0.2355,
-     0.6259
+     0.6629,
+     0.2244,
+     0.1126
     ]
    },
    "rot": [
@@ -5518,14 +5497,14 @@
      0.0328
     ],
     "blend": [
-     0.7408,
-     0.1948,
-     0.0644
+     0.7097,
+     0.2077,
+     0.0825
     ],
     "market": [
-     0.6635,
-     0.2242,
-     0.1122
+     0.5881,
+     0.245,
+     0.167
     ]
    },
    "rot": [
@@ -5933,14 +5912,14 @@
      0.005
     ],
     "blend": [
-     0.856,
-     0.1302,
-     0.0138
+     0.9394,
+     0.0557,
+     0.005
     ],
     "market": [
-     0.7799,
-     0.176,
-     0.0441
+     0.9626,
+     0.0324,
+     0.005
     ]
    },
    "rot": [
@@ -7676,14 +7655,14 @@
      0.8636
     ],
     "blend": [
-     0.0391,
-     0.1705,
-     0.7904
+     0.005,
+     0.0845,
+     0.9105
     ],
     "market": [
-     0.0943,
-     0.2148,
-     0.6909
+     0.005,
+     0.0527,
+     0.9423
     ]
    },
    "rot": [
@@ -8091,14 +8070,14 @@
      0.9141
     ],
     "blend": [
-     0.0058,
-     0.1079,
-     0.8863
+     0.0099,
+     0.1205,
+     0.8696
     ],
     "market": [
-     0.0177,
-     0.1385,
-     0.8438
+     0.0353,
+     0.1659,
+     0.7988
     ]
    },
    "rot": [
@@ -8428,15 +8407,15 @@
    "venue": "Atlanta",
    "label": "England v Argentina",
    "known": true,
-   "winner": null,
+   "winner": "Argentina",
    "proj": []
   },
   {
    "n": 103,
    "utc": "2026-07-18 21:00:00Z",
    "venue": "Miami",
-   "label": "3rd place",
-   "known": false,
+   "label": "France v England",
+   "known": true,
    "winner": null,
    "proj": []
   },
@@ -8444,8 +8423,8 @@
    "n": 104,
    "utc": "2026-07-19 19:00:00Z",
    "venue": "New York/New Jersey",
-   "label": "FINAL",
-   "known": false,
+   "label": "Spain v Argentina",
+   "known": true,
    "winner": null,
    "proj": []
   }
