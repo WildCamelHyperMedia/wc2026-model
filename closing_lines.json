@@ -1090,13 +1090,13 @@
  },
  "England|Argentina": {
   "probs": [
-   0.3532,
-   0.3326,
-   0.3142
+   0.3535,
+   0.3309,
+   0.3156
   ],
   "n_books": 9,
-  "captured_at": "2026-07-15 02:30 UTC",
+  "captured_at": "2026-07-15 10:20 UTC",
   "kickoff": "2026-07-15T19:00:00Z",
-  "mins_before_ko": 989
+  "mins_before_ko": 520
  }
 }
