@@ -1,18 +1,18 @@
 {
  "meta": {
   "n_sims": 50000,
-  "generated_at": "2026-07-15 23:29 UTC",
+  "generated_at": "2026-07-16 01:01 UTC",
   "overround_pct": 23.7,
   "freshness": {
-   "elo_as_of": "2026-07-15 23:28 UTC",
+   "elo_as_of": "2026-07-16 01:00 UTC",
    "odds_as_of": "2026-06-29 11:59 UTC",
    "odds_source": "The Odds API consensus (3 books)",
    "results_locked": 72,
    "manual_adjustments": {},
    "ko_slots_known": 32,
    "ko_winners_known": 30,
-   "book_fixtures": 1,
-   "book_as_of": "2026-07-15 17:47 UTC"
+   "book_fixtures": 2,
+   "book_as_of": "2026-07-16 01:00 UTC"
   },
   "modes": {
    "pure": "Raw Elo (live) \u2014 no injury/news information",
@@ -47,7 +47,7 @@
      "qf": 1.0,
      "sf": 1.0,
      "final": 1.0,
-     "champion": 0.54792
+     "champion": 0.56094
     },
     "market": {
      "group_win": 1.0,
@@ -56,14 +56,14 @@
      "qf": 1.0,
      "sf": 1.0,
      "final": 1.0,
-     "champion": 0.54792
+     "champion": 0.57426
     }
    },
    "edge_pure": 0.4429648828427176,
    "ev_pure": 3.3833599999999997,
-   "edge_blend": 0.4429648828427176,
-   "ev_blend": 3.3833599999999997,
-   "kelly_blend": 0.4833371428571428
+   "edge_blend": 0.45598488284271765,
+   "ev_blend": 3.48752,
+   "kelly_blend": 0.49821714285714286
   },
   {
    "team": "Argentina",
@@ -91,7 +91,7 @@
      "qf": 1.0,
      "sf": 1.0,
      "final": 1.0,
-     "champion": 0.45208
+     "champion": 0.43906
     },
     "market": {
      "group_win": 1.0,
@@ -100,14 +100,14 @@
      "qf": 1.0,
      "sf": 1.0,
      "final": 1.0,
-     "champion": 0.45208
+     "champion": 0.42574
     }
    },
    "edge_pure": 0.27738508446977406,
    "ev_pure": 1.2603999999999997,
-   "edge_blend": 0.27738508446977406,
-   "ev_blend": 1.2603999999999997,
-   "kelly_blend": 0.31509999999999994
+   "edge_blend": 0.2643650844697741,
+   "ev_blend": 1.1953,
+   "kelly_blend": 0.298825
   },
   {
    "team": "Czechia",
