@@ -335,7 +335,11 @@ const DOW=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 function renderMatches(){
   const gf=document.getElementById('grpFilter').value;
+  const KOSTAGE=n=>n<=88?'32':n<=96?'16':n<=100?'QF':n<=102?'SF':n===103?'3rd':'F';
   const list=DATA.matches.filter(m=>!gf||m.group===gf);
+  // knockout fixtures join the timeline (only in the unfiltered view)
+  const koRows=gf?[]:DATA.ko.map(k=>({...k,isKO:true,group:KOSTAGE(k.n),rot:[false,false]}));
+  list.push(...koRows);
   const days={};
   list.forEach(m=>{
     const dt=new Date(m.utc.replace(' ','T'));
@@ -349,6 +353,23 @@ function renderMatches(){
     const head=`${DOW[dt.getDay()]} ${MON[dt.getMonth()]} ${dt.getDate()}`;
     const rows=ms.sort((a,b)=>a.dt-b.dt).map(m=>{
       const t=m.dt.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
+      if(m.isKO&&m.winner){ // knockout decided
+        return `<div class="mrow" style="opacity:.78;cursor:default">
+          <span class="tm">${t}</span><span class="gtag" title="knockout">${m.group}</span>
+          <span class="vs">M${m.n} · ${m.label}<span class="venue">${m.venue}</span></span>
+          <span class="pos" style="font-weight:700">✓ ${m.winner} advanced</span>
+          <span></span><span></span></div>`;
+      }
+      if(m.isKO&&!m.probs){ // knockout pairing not set yet
+        const pj=m.proj&&m.proj.length
+          ?'likely: '+m.proj.map(p=>`${p.pair[0]}–${p.pair[1]} ${(p.p*100).toFixed(0)}%`).join(' · ')
+          :'pairing set by earlier rounds';
+        return `<div class="mrow" style="cursor:default">
+          <span class="tm">${t}</span><span class="gtag" title="knockout">${m.group}</span>
+          <span class="vs">M${m.n} · ${m.label}<span class="venue">${m.venue}</span></span>
+          <span class="pick pk-split">TBD</span>
+          <span class="mpct" style="text-align:left;grid-column:span 2">${pj}</span></div>`;
+      }
       if(m.played){ // finished: show result + model report card
         const[hg,ag]=m.played;
         const nm=`${hg>ag?'<b>'+m.home+'</b>':m.home} v ${ag>hg?'<b>'+m.away+'</b>':m.away}`;

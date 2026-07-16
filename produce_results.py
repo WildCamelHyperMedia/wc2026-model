@@ -158,6 +158,23 @@ for fx in fixtures:
         pairs = [(p, c) for (mid, p), c in r32_counter.items() if mid == n]
         pairs.sort(key=lambda x: -x[1])
         item["proj"] = [{"pair": list(p), "p": c / N} for p, c in pairs[:3]]
+    if known:  # real pairing set -> price it like any fixture
+        stage = ("r32" if n <= 88 else "r16" if n <= 96 else
+                 "qf" if n <= 100 else "sf" if n <= 102 else "final")
+        a, b = M.KO_SLOTS[n]
+        item["home"], item["away"] = a, b
+        item["stage"] = stage
+        item["probs"] = {}
+        for mode, alpha in MODES.items():
+            pw, pd, pl = M.match_probs(a, b, OFFSETS, alpha, stage)
+            item["probs"][mode] = [round(pw, 4), round(pd, 4), round(pl, 4)]
+        bk = M.BOOK.get((a, b))
+        if bk:
+            item["book"], item["book_n"] = bk[0], bk[1]
+        else:
+            bk = M.BOOK.get((b, a))
+            if bk:
+                item["book"], item["book_n"] = bk[0][::-1], bk[1]
     ko.append(item)
 ko.sort(key=lambda m: (m["utc"], m["n"]))
 
