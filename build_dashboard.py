@@ -420,7 +420,8 @@ function renderMatches(){
       const chip=agree>=2
         ?`<span class="pick ${cls}">${lead} <small>${agree}/3 · ${conf} · ${(maxP*100).toFixed(0)}%</small></span>`
         :`<span class="pick pk-split">models split <small>tap for detail</small></span>`;
-      const nm=`M${m.n} · ${m.home} v ${m.away}${rot}`;
+      const koTag=m.isKO?(m.n===104?' 🏆 THE FINAL':m.n===103?' · 3rd place':m.n>=101?' · Semifinal':m.n>=97?' · Quarterfinal':m.n>=89?' · Round of 16':' · Round of 32'):'';
+      const nm=`M${m.n} · ${m.home} v ${m.away}${rot}<b style="color:var(--gold)">${koTag}</b>`;
       // per-mode detail table
       const MODE_LAB={pure:'Pure Elo',blend:'Blended ★',market:'Market'};
       let det=MODES3.map((md,i)=>{
