@@ -1,10 +1,10 @@
 {
  "meta": {
   "n_sims": 50000,
-  "generated_at": "2026-07-18 11:08 UTC",
+  "generated_at": "2026-07-18 12:13 UTC",
   "overround_pct": 23.7,
   "freshness": {
-   "elo_as_of": "2026-07-18 09:56 UTC",
+   "elo_as_of": "2026-07-18 12:12 UTC",
    "odds_as_of": "2026-06-29 11:59 UTC",
    "odds_source": "The Odds API consensus (3 books)",
    "results_locked": 72,
@@ -12,7 +12,7 @@
    "ko_slots_known": 32,
    "ko_winners_known": 30,
    "book_fixtures": 2,
-   "book_as_of": "2026-07-18 06:06 UTC"
+   "book_as_of": "2026-07-18 12:12 UTC"
   },
   "modes": {
    "pure": "Raw Elo (live) \u2014 no injury/news information",
@@ -47,7 +47,7 @@
      "qf": 1.0,
      "sf": 1.0,
      "final": 1.0,
-     "champion": 0.56398
+     "champion": 0.56438
     },
     "market": {
      "group_win": 1.0,
@@ -56,14 +56,14 @@
      "qf": 1.0,
      "sf": 1.0,
      "final": 1.0,
-     "champion": 0.58034
+     "champion": 0.58104
     }
    },
    "edge_pure": 0.4429648828427176,
    "ev_pure": 3.3833599999999997,
-   "edge_blend": 0.4590248828427177,
-   "ev_blend": 3.5118400000000003,
-   "kelly_blend": 0.5016914285714286
+   "edge_blend": 0.45942488284271765,
+   "ev_blend": 3.51504,
+   "kelly_blend": 0.5021485714285714
   },
   {
    "team": "Argentina",
@@ -91,7 +91,7 @@
      "qf": 1.0,
      "sf": 1.0,
      "final": 1.0,
-     "champion": 0.43602
+     "champion": 0.43562
     },
     "market": {
      "group_win": 1.0,
@@ -100,14 +100,14 @@
      "qf": 1.0,
      "sf": 1.0,
      "final": 1.0,
-     "champion": 0.41966
+     "champion": 0.41896
     }
    },
    "edge_pure": 0.27738508446977406,
    "ev_pure": 1.2603999999999997,
-   "edge_blend": 0.2613250844697741,
-   "ev_blend": 1.1801,
-   "kelly_blend": 0.295025
+   "edge_blend": 0.2609250844697741,
+   "ev_blend": 1.1781000000000001,
+   "kelly_blend": 0.29452500000000004
   },
   {
    "team": "Czechia",
@@ -9028,20 +9028,20 @@
      0.299
     ],
     "blend": [
-     0.4711,
-     0.2539,
-     0.275
+     0.4722,
+     0.2532,
+     0.2746
     ],
     "market": [
-     0.5087,
-     0.2402,
-     0.2511
+     0.511,
+     0.2387,
+     0.2503
     ]
    },
    "book": [
-    0.5087,
-    0.2402,
-    0.2511
+    0.511,
+    0.2387,
+    0.2503
    ],
    "book_n": 9
   },
@@ -9063,20 +9063,20 @@
      0.3196
     ],
     "blend": [
-     0.4161,
-     0.2918,
-     0.2921
+     0.4164,
+     0.2919,
+     0.2917
     ],
     "market": [
-     0.4207,
-     0.3147,
-     0.2646
+     0.4213,
+     0.3148,
+     0.2638
     ]
    },
    "book": [
-    0.4207,
-    0.3147,
-    0.2646
+    0.4213,
+    0.3148,
+    0.2638
    ],
    "book_n": 9
   }
