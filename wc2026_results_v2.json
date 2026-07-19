@@ -1,16 +1,16 @@
 {
  "meta": {
   "n_sims": 50000,
-  "generated_at": "2026-07-18 23:27 UTC",
+  "generated_at": "2026-07-19 01:03 UTC",
   "overround_pct": 23.7,
   "freshness": {
-   "elo_as_of": "2026-07-18 23:26 UTC",
+   "elo_as_of": "2026-07-19 01:02 UTC",
    "odds_as_of": "2026-06-29 11:59 UTC",
    "odds_source": "The Odds API consensus (3 books)",
    "results_locked": 72,
    "manual_adjustments": {},
    "ko_slots_known": 32,
-   "ko_winners_known": 30,
+   "ko_winners_known": 31,
    "book_fixtures": 2,
    "book_as_of": "2026-07-18 19:05 UTC"
   },
@@ -9016,7 +9016,7 @@
    "venue": "Miami",
    "label": "France v England",
    "known": true,
-   "winner": null,
+   "winner": "England",
    "proj": [],
    "home": "France",
    "away": "England",
