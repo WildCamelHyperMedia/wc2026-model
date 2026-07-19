@@ -1112,13 +1112,13 @@
  },
  "Spain|Argentina": {
   "probs": [
-   0.4203,
-   0.315,
-   0.2647
+   0.4195,
+   0.3174,
+   0.2632
   ],
   "n_books": 9,
-  "captured_at": "2026-07-18 19:05 UTC",
+  "captured_at": "2026-07-19 04:47 UTC",
   "kickoff": "2026-07-19T19:00:00Z",
-  "mins_before_ko": 1435
+  "mins_before_ko": 852
  }
 }
