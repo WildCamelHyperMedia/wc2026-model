@@ -1,16 +1,6 @@
 {
- "as_of": "2026-07-19 17:09 UTC",
+ "as_of": "2026-07-19 23:58 UTC",
  "source": "The Odds API consensus",
  "quota_left": 51.0,
- "events": {
-  "Spain|Argentina": {
-   "probs": [
-    0.4237,
-    0.3161,
-    0.2602
-   ],
-   "n_books": 9,
-   "commence": "2026-07-19T19:00:00Z"
-  }
- }
+ "events": {}
 }
