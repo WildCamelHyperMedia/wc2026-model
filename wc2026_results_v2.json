@@ -1,10 +1,10 @@
 {
  "meta": {
   "n_sims": 50000,
-  "generated_at": "2026-07-26 16:02 UTC",
+  "generated_at": "2026-07-26 17:33 UTC",
   "overround_pct": 23.7,
   "freshness": {
-   "elo_as_of": "2026-07-26 16:01 UTC",
+   "elo_as_of": "2026-07-26 17:32 UTC",
    "odds_as_of": "2026-06-29 11:59 UTC",
    "odds_source": "The Odds API consensus (3 books)",
    "results_locked": 72,
@@ -12,7 +12,7 @@
    "ko_slots_known": 32,
    "ko_winners_known": 32,
    "book_fixtures": 0,
-   "book_as_of": "2026-07-26 11:19 UTC"
+   "book_as_of": "2026-07-26 17:32 UTC"
   },
   "modes": {
    "pure": "Raw Elo (live) \u2014 no injury/news information",
