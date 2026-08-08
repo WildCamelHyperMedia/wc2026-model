@@ -1,7 +1,7 @@
 {
  "meta": {
   "n_sims": 50000,
-  "generated_at": "2026-08-08 01:41 UTC",
+  "generated_at": "2026-08-08 03:27 UTC",
   "overround_pct": 23.7,
   "freshness": {
    "elo_as_of": "2026-08-08 01:40 UTC",
@@ -12,7 +12,7 @@
    "ko_slots_known": 32,
    "ko_winners_known": 32,
    "book_fixtures": 0,
-   "book_as_of": "2026-08-07 19:54 UTC"
+   "book_as_of": "2026-08-08 03:26 UTC"
   },
   "modes": {
    "pure": "Raw Elo (live) \u2014 no injury/news information",
