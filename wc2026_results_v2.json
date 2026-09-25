@@ -1,10 +1,10 @@
 {
  "meta": {
   "n_sims": 50000,
-  "generated_at": "2026-09-25 15:54 UTC",
+  "generated_at": "2026-09-25 19:53 UTC",
   "overround_pct": 23.7,
   "freshness": {
-   "elo_as_of": "2026-09-25 15:53 UTC",
+   "elo_as_of": "2026-09-25 19:52 UTC",
    "odds_as_of": "2026-06-29 11:59 UTC",
    "odds_source": "The Odds API consensus (3 books)",
    "results_locked": 72,
@@ -12,7 +12,7 @@
    "ko_slots_known": 32,
    "ko_winners_known": 32,
    "book_fixtures": 0,
-   "book_as_of": "2026-09-25 11:19 UTC"
+   "book_as_of": "2026-09-25 19:52 UTC"
   },
   "modes": {
    "pure": "Raw Elo (live) \u2014 no injury/news information",
@@ -2092,7 +2092,7 @@
   {
    "team": "Panama",
    "group": "L",
-   "elo": 1658,
+   "elo": 1650,
    "offset": 0.0,
    "manual": 0.0,
    "calibrated": false,
@@ -3998,19 +3998,19 @@
    "away": "Panama",
    "probs": {
     "pure": [
-     0.2327,
-     0.2598,
-     0.5075
+     0.2426,
+     0.2614,
+     0.496
     ],
     "blend": [
-     0.2327,
-     0.2598,
-     0.5075
+     0.2426,
+     0.2614,
+     0.496
     ],
     "market": [
-     0.2327,
-     0.2598,
-     0.5075
+     0.2426,
+     0.2614,
+     0.496
     ]
    },
    "rot": [
@@ -5990,19 +5990,19 @@
    "away": "Croatia",
    "probs": {
     "pure": [
-     0.1063,
-     0.2213,
-     0.6724
+     0.1001,
+     0.2181,
+     0.6817
     ],
     "blend": [
-     0.0458,
-     0.1779,
-     0.7763
+     0.0424,
+     0.1742,
+     0.7834
     ],
     "market": [
-     0.0145,
-     0.132,
-     0.8535
+     0.013,
+     0.1284,
+     0.8586
     ]
    },
    "rot": [
@@ -7650,19 +7650,19 @@
    "away": "England",
    "probs": {
     "pure": [
-     0.0072,
-     0.1129,
-     0.8799
+     0.0062,
+     0.1095,
+     0.8843
     ],
     "blend": [
      0.005,
-     0.0746,
-     0.9204
+     0.0719,
+     0.9231
     ],
     "market": [
      0.005,
-     0.0456,
-     0.9494
+     0.0436,
+     0.9514
     ]
    },
    "rot": [
