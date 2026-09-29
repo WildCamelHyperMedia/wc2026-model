@@ -1,5 +1,5 @@
 {
- "as_of": "2026-09-29 15:24 UTC",
+ "as_of": "2026-09-29 20:08 UTC",
  "elo": {
   "Spain": 2277,
   "Argentina": 2173,
@@ -26,10 +26,10 @@
   "Australia": 1786,
   "Sweden": 1759,
   "United States": 1757,
-  "Iran": 1748,
   "Scotland": 1747,
   "Algeria": 1743,
   "Ivory Coast": 1739,
+  "Iran": 1738,
   "Canada": 1736,
   "Egypt": 1732,
   "South Korea": 1725,
@@ -40,13 +40,13 @@
   "Uzbekistan": 1647,
   "Jordan": 1622,
   "Saudi Arabia": 1616,
-  "Cape Verde": 1595,
   "South Africa": 1570,
   "Iraq": 1564,
   "Haiti": 1564,
-  "Ghana": 1560,
+  "Cape Verde": 1560,
   "New Zealand": 1557,
   "Tunisia": 1533,
+  "Ghana": 1512,
   "Curacao": 1486,
   "Qatar": 1449
  }
