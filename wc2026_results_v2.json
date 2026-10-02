@@ -1,10 +1,10 @@
 {
  "meta": {
   "n_sims": 50000,
-  "generated_at": "2026-10-02 04:27 UTC",
+  "generated_at": "2026-10-02 10:41 UTC",
   "overround_pct": 23.7,
   "freshness": {
-   "elo_as_of": "2026-10-02 04:26 UTC",
+   "elo_as_of": "2026-10-02 10:40 UTC",
    "odds_as_of": "2026-06-29 11:59 UTC",
    "odds_source": "The Odds API consensus (3 books)",
    "results_locked": 72,
@@ -12,7 +12,7 @@
    "ko_slots_known": 32,
    "ko_winners_known": 32,
    "book_fixtures": 0,
-   "book_as_of": "2026-10-01 23:42 UTC"
+   "book_as_of": "2026-10-02 10:40 UTC"
   },
   "modes": {
    "pure": "Raw Elo (live) \u2014 no injury/news information",
@@ -464,7 +464,7 @@
   {
    "team": "Haiti",
    "group": "C",
-   "elo": 1564,
+   "elo": 1586,
    "offset": 0.0,
    "manual": 0.0,
    "calibrated": false,
@@ -2670,19 +2670,19 @@
    "away": "Scotland",
    "probs": {
     "pure": [
-     0.166,
-     0.2446,
-     0.5894
+     0.1894,
+     0.251,
+     0.5596
     ],
     "blend": [
-     0.166,
-     0.2446,
-     0.5894
+     0.1894,
+     0.251,
+     0.5596
     ],
     "market": [
-     0.166,
-     0.2446,
-     0.5894
+     0.1894,
+     0.251,
+     0.5596
     ]
    },
    "rot": [
@@ -4662,18 +4662,18 @@
    "away": "Haiti",
    "probs": {
     "pure": [
-     0.8623,
-     0.1258,
-     0.0119
+     0.8482,
+     0.1356,
+     0.0162
     ],
     "blend": [
-     0.9102,
-     0.0848,
+     0.9018,
+     0.0932,
      0.005
     ],
     "market": [
-     0.9421,
-     0.0529,
+     0.9359,
+     0.0591,
      0.005
     ]
    },
@@ -6405,18 +6405,18 @@
    "away": "Haiti",
    "probs": {
     "pure": [
-     0.7912,
-     0.17,
-     0.0388
+     0.7717,
+     0.1802,
+     0.0481
     ],
     "blend": [
-     0.8642,
-     0.1245,
-     0.0114
+     0.8502,
+     0.1342,
+     0.0156
     ],
     "market": [
-     0.9113,
-     0.0837,
+     0.903,
+     0.092,
      0.005
     ]
    },
