@@ -1,10 +1,10 @@
 {
  "meta": {
   "n_sims": 50000,
-  "generated_at": "2026-11-12 03:14 UTC",
+  "generated_at": "2026-11-12 11:40 UTC",
   "overround_pct": 23.7,
   "freshness": {
-   "elo_as_of": "2026-11-12 03:13 UTC",
+   "elo_as_of": "2026-11-12 11:40 UTC",
    "odds_as_of": "2026-06-29 11:59 UTC",
    "odds_source": "The Odds API consensus (3 books)",
    "results_locked": 72,
@@ -12,7 +12,7 @@
    "ko_slots_known": 32,
    "ko_winners_known": 32,
    "book_fixtures": 0,
-   "book_as_of": "2026-11-11 22:06 UTC"
+   "book_as_of": "2026-11-12 11:40 UTC"
   },
   "modes": {
    "pure": "Raw Elo (live) \u2014 no injury/news information",
@@ -1256,7 +1256,7 @@
   {
    "team": "New Zealand",
    "group": "G",
-   "elo": 1559,
+   "elo": 1561,
    "offset": 0.0,
    "manual": 0.0,
    "calibrated": false,
@@ -3417,19 +3417,19 @@
    "away": "New Zealand",
    "probs": {
     "pure": [
-     0.6182,
-     0.2375,
-     0.1442
+     0.6157,
+     0.2382,
+     0.1461
     ],
     "blend": [
-     0.6182,
-     0.2375,
-     0.1442
+     0.6157,
+     0.2382,
+     0.1461
     ],
     "market": [
-     0.6182,
-     0.2375,
-     0.1442
+     0.6157,
+     0.2382,
+     0.1461
     ]
    },
    "rot": [
@@ -5409,19 +5409,19 @@
    "away": "Egypt",
    "probs": {
     "pure": [
-     0.166,
-     0.2446,
-     0.5894
+     0.168,
+     0.2453,
+     0.5867
     ],
     "blend": [
-     0.166,
-     0.2446,
-     0.5894
+     0.168,
+     0.2453,
+     0.5867
     ],
     "market": [
-     0.166,
-     0.2446,
-     0.5894
+     0.168,
+     0.2453,
+     0.5867
     ]
    },
    "rot": [
@@ -7567,19 +7567,19 @@
    "away": "Belgium",
    "probs": {
     "pure": [
-     0.0205,
-     0.1437,
-     0.8358
+     0.021,
+     0.1447,
+     0.8344
     ],
     "blend": [
      0.005,
-     0.1005,
-     0.8945
+     0.1013,
+     0.8937
     ],
     "market": [
      0.005,
-     0.0649,
-     0.9301
+     0.0655,
+     0.9295
     ]
    },
    "rot": [
