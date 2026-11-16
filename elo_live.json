@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-16 07:05 UTC",
+ "as_of": "2026-11-16 17:17 UTC",
  "elo": {
   "Spain": 2258,
   "England": 2182,
@@ -21,7 +21,7 @@
   "Austria": 1849,
   "Paraguay": 1838,
   "Mexico": 1837,
-  "Senegal": 1808,
+  "Senegal": 1812,
   "United States": 1803,
   "Australia": 1794,
   "Sweden": 1784,
@@ -35,8 +35,8 @@
   "South Korea": 1717,
   "DR Congo": 1691,
   "Bosnia-Herzegovina": 1662,
+  "Panama": 1661,
   "Saudi Arabia": 1652,
-  "Panama": 1650,
   "Czechia": 1647,
   "Uzbekistan": 1636,
   "Jordan": 1622,
@@ -45,9 +45,9 @@
   "New Zealand": 1563,
   "Haiti": 1552,
   "Iraq": 1534,
-  "Ghana": 1514,
-  "Curacao": 1495,
+  "Ghana": 1515,
   "Tunisia": 1485,
+  "Curacao": 1484,
   "Qatar": 1461
  }
 }
